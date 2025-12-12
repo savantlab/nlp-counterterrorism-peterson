@@ -46,6 +46,12 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 | **TF-IDF (sklearn) - Most Accurate** | **16.01%** |
 | TF-IDF with N-grams | 15.31% |
 
+### Shared Vocabulary Word Cloud
+
+![Shared Vocabulary Word Cloud](wordcloud_shared_vocabulary.png)
+
+*242 shared words (stop words removed), sized by frequency in YouTube transcript*
+
 ### Main Conclusions
 
 1. **True Similarity: ~16%**
