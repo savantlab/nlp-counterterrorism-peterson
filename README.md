@@ -37,6 +37,9 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 - `religion_context_analysis.py` - Analyze how religion is mentioned
 - `religion_halves_comparison.py` - Compare religion mentions in first vs second half
 - `feminism_analysis.py` - Comprehensive feminism discourse analysis
+- `thematic_similarities_analysis.py` - Analyze conceptual overlaps and map YouTube↔2083 terms
+- `feminism_comparison_yt_vs_doc.py` - Compare feminism mentions between YouTube and 2083
+- `visualize_shared_roots.py` - Create visualizations showing shared intellectual framework
 
 ### Presentation
 - `analysis_presentation.ipynb` - Jupyter notebook with visualizations
@@ -224,6 +227,41 @@ All 7 identity categories are present with dramatically uneven distribution:
 
 **Finding:** Feminism NOT discussed as women's rights advocacy. Instead framed as component of "Cultural Marxism" designed to undermine Western civilization, portrayed as harmful to both women AND men.
 
+### Shared Ideological Roots Analysis
+
+![Shared Roots Visualization](shared_roots_visualization.png)
+
+*Comprehensive mapping showing that YouTube and 2083 critique the same intellectual movement using different terminology*
+
+![Overlap Venn Diagram](overlap_venn_diagram.png)
+
+*75% conceptual overlap vs 25% unique content (2083 emphasizes feminism 75x and Islam 390x)*
+
+**Key Finding: Same Critique, Different Labels**
+
+Both texts trace their critiques to the same intellectual root:
+- **Marx (1818-1883):** Economic class struggle → Cultural application
+- **Frankfurt School (1930s):** Critical theory applied to culture and society
+
+**Conceptual Mappings:**
+1. **Post-modernism (YT) = Political Correctness (2083)**
+   - Both describe suppression of speech and enforcement of ideological conformity
+2. **Neo-Marxism (YT) = Cultural Marxism (2083)**  
+   - Both describe applying Marxist conflict theory from economics to culture
+3. **Identity politics (YT) ≈ Identity + Feminism (2083)**
+   - Both describe division along demographic categories rather than ideas
+
+**Overlap Analysis:**
+- ~75% shared ideological framework and conceptual overlap
+- YouTube: GENERAL critique of post-modernist neo-Marxism in academia
+- 2083: SAME critique + SPECIFIC manifestations (feminism, Islam as threats)
+- YouTube mentions feminism: 0 times (discusses related concepts)
+- 2083 mentions feminism: 75 times (explicit focus)
+- YouTube mentions Islam: 0 times
+- 2083 mentions Islam: 390 times (dominant second-half theme)
+
+**Finding:** The 16% TF-IDF similarity reflects shared vocabulary and concepts, but 2083 extends the critique to specific implementations (Cultural Marxism → feminism) and additional threats (Islam) not present in the YouTube video. Both texts fundamentally oppose the same ideological movement rooted in Marxist theory applied to culture.
+
 ### Exact Phrase Matches
 
 **5-word match:**
@@ -249,6 +287,10 @@ All 7 identity categories are present with dramatically uneven distribution:
 - `religion_discourse_analysis.txt` - All Islam and Christianity contexts
 - `religion_halves_comparison.txt` - Religion distribution between document halves
 - `feminism_analysis_report.txt` - All 23 feminism and 13 feminist contexts
+- `thematic_similarities_summary.txt` - Conceptual mappings and shared ideological roots
+- `feminism_yt_vs_doc_summary.txt` - Feminism comparison between YouTube (0) and 2083 (75)
+- `shared_roots_visualization.png` - Comprehensive diagram showing shared intellectual framework
+- `overlap_venn_diagram.png` - Venn diagram showing 75% conceptual overlap
 
 ## Usage
 
