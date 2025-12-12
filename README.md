@@ -33,6 +33,7 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 
 ### Presentation
 - `analysis_presentation.ipynb` - Jupyter notebook with visualizations
+- `visualize_themes.py` - Generate 4-panel thematic analysis visualization
 
 ## Key Findings
 
@@ -52,6 +53,12 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 ![Shared Vocabulary Word Cloud](wordcloud_shared_vocabulary.png)
 
 *242 shared words (stop words removed), sized by frequency in YouTube transcript*
+
+### Thematic Pattern Analysis
+
+![Thematic Analysis Visualization](thematic_analysis_visualization.png)
+
+*Comprehensive 4-panel visualization showing theme frequencies, YT/Doc ratios, theme density, and shared vocabulary counts across 10 thematic clusters*
 
 ### Main Conclusions
 
@@ -159,6 +166,7 @@ python vector_similarity.py
 python chunk_analysis.py
 python chunk2_deep_analysis.py
 python truncated_analysis.py
+python visualize_themes.py
 ```
 
 ### Jupyter notebook:
