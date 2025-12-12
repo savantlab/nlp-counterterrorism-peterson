@@ -1,0 +1,73 @@
+THEMATIC ANALYSIS OF SHARED VOCABULARY
+================================================================================
+
+Theme: Identity & Social
+  Shared words: 14
+  YouTube freq: 24 (3.31%)
+  Document freq: 121 (0.29%)
+  YT/Doc ratio: 0.1983
+  Words: class, discrimination, diversity, equality, gender, group, groups, identity, oppression, patriarchal, race, sex, sexual, victim
+
+Theme: Ideas & Thought
+  Shared words: 10
+  YouTube freq: 17 (2.34%)
+  Document freq: 120 (0.29%)
+  YT/Doc ratio: 0.1417
+  Words: believe, believers, concepts, idea, ideas, ideology, philosopher, think, thinking, truth
+
+Theme: Political & Ideological
+  Shared words: 10
+  YouTube freq: 15 (2.07%)
+  Document freq: 126 (0.31%)
+  YT/Doc ratio: 0.1190
+  Words: capitalism, ideology, left, marx, politics, post, postmodernism, progressive, radical, radicals
+
+Theme: Time & History
+  Shared words: 12
+  YouTube freq: 15 (2.07%)
+  Document freq: 297 (0.72%)
+  YT/Doc ratio: 0.0505
+  Words: 19th, 60s, century, currently, decades, first, history, now, recently, second, time, today
+
+Theme: Education & Academia
+  Shared words: 10
+  YouTube freq: 14 (1.93%)
+  Document freq: 162 (0.39%)
+  YT/Doc ratio: 0.0864
+  Words: campus, children, college, degree, education, learn, professor, professors, universities, university
+
+Theme: Power & Conflict
+  Shared words: 11
+  YouTube freq: 13 (1.79%)
+  Document freq: 138 (0.34%)
+  YT/Doc ratio: 0.0942
+  Words: conflict, corrupt, dangerous, destructive, fought, oppose, power, struggle, undermine, violently, war
+
+Theme: Cultural & Western
+  Shared words: 6
+  YouTube freq: 12 (1.65%)
+  Document freq: 314 (0.76%)
+  YT/Doc ratio: 0.0382
+  Words: history, shakespeare, society, values, west, western
+
+Theme: Freedom & Rights
+  Shared words: 8
+  YouTube freq: 10 (1.38%)
+  Document freq: 87 (0.21%)
+  YT/Doc ratio: 0.1149
+  Words: consensus, democracy, expression, free, freedom, opinion, rights, speech
+
+Theme: Action & Change
+  Shared words: 8
+  YouTube freq: 9 (1.24%)
+  Document freq: 101 (0.25%)
+  YT/Doc ratio: 0.0891
+  Words: became, done, made, making, produced, spread, take, took
+
+Theme: People & Society
+  Shared words: 6
+  YouTube freq: 8 (1.10%)
+  Document freq: 141 (0.34%)
+  YT/Doc ratio: 0.0567
+  Words: children, generations, individuals, people, society, young
+

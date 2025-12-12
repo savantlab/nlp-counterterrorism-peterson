@@ -29,6 +29,7 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 - `shared_words_list.py` - Extract all shared vocabulary
 - `truncated_analysis.py` - Compare full vs truncated transcript
 - `split_document_analysis.py` - Split both documents in half and compare all combinations
+- `thematic_analysis.py` - Group shared words into themes and analyze patterns
 
 ### Presentation
 - `analysis_presentation.ipynb` - Jupyter notebook with visualizations
@@ -70,34 +71,46 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
    - 177 terms unique to second half of video (after "Hobbes")
    - Shared terms: ideas, identity, western, world, post, campus, universities, sexual, power, marx
 
-4. **Different Terminology for Same Concepts**
+4. **Thematic Pattern Analysis**
+   - **Identity & Social** - Most prominent theme in YouTube (24 occurrences)
+     - Words: identity, race, sex, sexual, gender, diversity, equality, oppression, class
+     - Highest YT/Doc ratio (0.1983x) - most over-represented in YouTube
+   - **Ideas & Thought** - Second highest (17 occurrences)
+     - Words: ideas, think, philosophy, truth, belief, concepts
+   - **Political & Ideological** - Third major theme (15 occurrences)
+     - Words: marx, capitalism, radical, progressive, politics, post, postmodernism
+   - **Education & Academia** - 14 occurrences
+     - Words: campus, university, professor, college, degree
+   - All 7 thematic clusters show consistent vocabulary overlap
+
+5. **Different Terminology for Same Concepts**
    - **Document uses:** "Political Correctness" (78x), "Cultural Marxism" (28x), "Frankfurt School" (72x)
    - **YouTube uses:** "Post Modernist" (3x), "Western Civilization" (1x)
    - Both discuss related concepts with different framing
 
-5. **Different Focus Areas**
+6. **Different Focus Areas**
    - **Document:** Heavy focus on Islam (186 mentions), extensive geographic/political content
    - **YouTube:** Focus on education, post-modernism, no Islam mentions
    - YouTube synthesizes themes from across entire document, not one section
 
-6. **Chunk Analysis Results**
+7. **Chunk Analysis Results**
    - Document split into 4 chunks (~250 pages each)
    - Chunk 2 highest similarity: 13.18%
    - **Whole document (16.01%) more similar than any chunk**
    - Suggests video draws from multiple sections, not concentrated in one area
 
-7. **Named Entity Analysis**
+8. **Named Entity Analysis**
    - Common names: Marx, Karl Marx, Shakespeare, America, West
    - Document-only: Frankfurt School, Islam, Muhammad, Political Correctness
    - YouTube mentions: Jordan Peterson (video creator)
 
-8. **Truncated Analysis (Before "Hobbes")**
+9. **Truncated Analysis (Before "Hobbes")**
    - First half (345 words): 12.19% similarity
    - Full transcript (726 words): 16.01% similarity
    - Second half contributes more to similarity
    - Terms after Hobbes: capitalism, power, politics, conflict, free, poor
 
-9. **Split Document Analysis (Halves Comparison)**
+10. **Split Document Analysis (Halves Comparison)**
    - **2083 First Half vs YT Full: 13.96%** (MORE similar)
    - **2083 Second Half vs YT Full: 11.45%** (LESS similar)
    - Difference: 2.51 percentage points
@@ -124,6 +137,7 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 - `shared_words_alphabetical.txt` - Simple alphabetical list
 - `shared_words_summary.txt` - Overview with statistics
 - `split_analysis_results.txt` - All 9 combinations of split document comparisons
+- `thematic_analysis_results.txt` - Thematic clustering of shared vocabulary
 
 ## Usage
 
@@ -135,6 +149,7 @@ python3 ngram_score.py
 python3 chunk_analysis.py
 python3 phrase_matching.py
 python3 shared_words_list.py
+python3 thematic_analysis.py
 ```
 
 ### With virtual environment (for sklearn-based scripts):
