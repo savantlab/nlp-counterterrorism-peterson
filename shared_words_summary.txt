@@ -1,0 +1,120 @@
+SHARED VOCABULARY ANALYSIS SUMMARY
+======================================================================
+
+STATISTICS:
+  Document unique content words: 7,127
+  YouTube unique content words: 336
+  Shared content words: 242
+  YouTube vocabulary coverage: 72.0%
+  Document vocabulary coverage: 3.4%
+
+TOP 50 SHARED WORDS (by YouTube importance):
+----------------------------------------------------------------------
+Word                    YT Freq   Doc Freq
+----------------------------------------------------------------------
+ideas                         7         16
+identity                      5          4
+can                           4         63
+world                         4         62
+post                          4          2
+western                       4        142
+new                           3         88
+people                        3         50
+use                           3         13
+west                          3         21
+free                          3         32
+campus                        2         13
+first                         2         47
+universities                  2         28
+done                          2         12
+diversity                     2          3
+sexual                        2         24
+race                          2          5
+university                    2         43
+power                         2         30
+degree                        2          3
+corrupt                       2          1
+history                       2         75
+believe                       2         10
+see                           2         28
+marx                          2         17
+whose                         2          8
+politics                      2          6
+sex                           2         15
+stop                          2          2
+equality                      2          6
+class                         2         10
+consider                      2          5
+now                           2         39
+instead                       2          9
+clearly                       2          2
+millions                      2          3
+third                         2          8
+shakespeare                   1         11
+increasingly                  1          6
+must                          1         45
+simply                        1         11
+spread                        1          7
+white                         1          6
+college                       1          6
+union                         1          5
+practice                      1          4
+psychology                    1          9
+needs                         1          6
+undermine                     1          2
+
+
+TOP 50 SHARED WORDS (by Document importance):
+----------------------------------------------------------------------
+Word                    YT Freq   Doc Freq
+----------------------------------------------------------------------
+western                       4        142
+one                           1        115
+will                          1        107
+new                           3         88
+history                       2         75
+war                           1         68
+can                           4         63
+world                         4         62
+people                        3         50
+society                       1         48
+first                         2         47
+also                          1         47
+even                          1         46
+must                          1         45
+university                    2         43
+time                          1         41
+now                           2         39
+education                     1         38
+ideology                      1         37
+state                         1         32
+free                          3         32
+may                           1         31
+power                         2         30
+today                         1         29
+universities                  2         28
+see                           2         28
+radical                       1         28
+just                          1         27
+sexual                        2         24
+take                          1         24
+freedom                       1         23
+works                         1         23
+true                          1         22
+truth                         1         22
+century                       1         22
+made                          1         22
+west                          3         21
+left                          1         19
+long                          1         19
+america                       1         18
+system                        1         18
+children                      1         17
+liberal                       1         17
+right                         1         17
+became                        1         17
+marx                          2         17
+values                        1         17
+never                         1         17
+decades                       1         17
+middle                        1         17
