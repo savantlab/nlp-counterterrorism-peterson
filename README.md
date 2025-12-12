@@ -40,6 +40,8 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 - `thematic_similarities_analysis.py` - Analyze conceptual overlaps and map YouTube↔2083 terms
 - `feminism_comparison_yt_vs_doc.py` - Compare feminism mentions between YouTube and 2083
 - `visualize_shared_roots.py` - Create visualizations showing shared intellectual framework
+- `feminism_implicit_reference_analysis.py` - Analyze if YT refers to feminists as postmodern neo-marxists
+- `visualize_implicit_feminism.py` - Visualize strategic terminology and implicit reference
 
 ### Presentation
 - `analysis_presentation.ipynb` - Jupyter notebook with visualizations
@@ -262,6 +264,51 @@ Both texts trace their critiques to the same intellectual root:
 
 **Finding:** The 16% TF-IDF similarity reflects shared vocabulary and concepts, but 2083 extends the critique to specific implementations (Cultural Marxism → feminism) and additional threats (Islam) not present in the YouTube video. Both texts fundamentally oppose the same ideological movement rooted in Marxist theory applied to culture.
 
+### Strategic Terminology: Implicit Feminism Reference
+
+![Implicit Feminism Reference](implicit_feminism_reference_visualization.png)
+
+*YouTube video avoids "feminism" while describing radical feminist ideology through "postmodern neo-marxist" terminology*
+
+**Research Question:**
+Does the YouTube video refer to 'radical feminists' as 'postmodern neo-marxists' without using the word feminism?
+
+**Explicit Mentions:**
+- 'feminism/feminist' in YouTube video: **0 times**
+- 'postmodern/post-modernist' in YouTube: **4 times**  
+- 'neo-marxist' in YouTube: **1 time**
+
+**Characteristics of 'Postmodern Neo-Marxists' (YouTube Video):**
+- Western civilization is "corrupt oppressive and patriarchal"
+- Claim "all sex differences are socially constructed"
+- Practice "politics of identity"
+- Push "progressive activism" on campus
+- Enforce "fabricated gender pronouns"
+- Root out discrimination "where little or none exists"
+
+**Characteristics of 'Radical Feminism' (2083 Document):**
+- Part of Cultural Marxism ideology
+- Views Western civilization as patriarchal
+- Denies biological sex differences
+- Uses identity politics framework
+- Campus activism and political correctness
+- Progressive/leftist movement
+
+**Conceptual Overlap: 6 Shared Characteristics**
+1. Patriarchal critique
+2. Social construction of sex/gender
+3. Identity politics
+4. Marxist ideological roots
+5. Campus/academic activism
+6. Political correctness enforcement
+
+**Conclusion:**
+The YouTube video uses **'postmodern neo-marxists' as an umbrella term** that encompasses what 2083 calls 'radical feminism'. Both describe the same ideological movement using different terminology:
+- **YouTube**: GENERAL term (postmodern neo-marxism)
+- **2083**: SPECIFIC manifestation (radical feminism as form of Cultural Marxism)
+
+The video deliberately avoids the word 'feminism' while describing an ideology that matches radical feminist theory. This represents **strategic framing**: critique the ideology without naming the feminist movement explicitly.
+
 ### Exact Phrase Matches
 
 **5-word match:**
@@ -291,6 +338,8 @@ Both texts trace their critiques to the same intellectual root:
 - `feminism_yt_vs_doc_summary.txt` - Feminism comparison between YouTube (0) and 2083 (75)
 - `shared_roots_visualization.png` - Comprehensive diagram showing shared intellectual framework
 - `overlap_venn_diagram.png` - Venn diagram showing 75% conceptual overlap
+- `feminism_implicit_reference_results.txt` - Analysis of implicit feminism reference through umbrella terminology
+- `implicit_feminism_reference_visualization.png` - Strategic framing visualization showing 6 shared characteristics
 
 ## Usage
 
