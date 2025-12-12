@@ -31,6 +31,13 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 - `split_document_analysis.py` - Split both documents in half and compare all combinations
 - `thematic_analysis.py` - Group shared words into themes and analyze patterns
 
+### Content Analysis
+- `identity_categories_analysis.py` - Search for 7 identity politics categories
+- `visualize_identity_categories.py` - Visualize identity category distribution
+- `religion_context_analysis.py` - Analyze how religion is mentioned
+- `religion_halves_comparison.py` - Compare religion mentions in first vs second half
+- `feminism_analysis.py` - Comprehensive feminism discourse analysis
+
 ### Presentation
 - `analysis_presentation.ipynb` - Jupyter notebook with visualizations
 - `visualize_themes.py` - Generate 4-panel thematic analysis visualization
@@ -125,6 +132,98 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
    - YT First Half vs 2083 Full: 12.67% (slightly higher than second half at 11.91%)
    - Best overall match: Full documents (16.01%)
 
+## Content Analysis of 2083 Document
+
+### Identity Politics Categories (1,068 total occurrences)
+
+All 7 identity categories are present with dramatically uneven distribution:
+
+![Identity Categories Visualization](identity_categories_visualization.png)
+
+| Category | Count | Percentage | Status |
+|----------|-------|------------|--------|
+| **Religion** | 549 | 51.4% | ✓ DOMINANT |
+| **Race/Ethnicity** | 226 | 21.2% | ✓ PRESENT |
+| **Gender** | 176 | 16.5% | ✓ PRESENT |
+| **Nationality** | 68 | 6.4% | ✓ PRESENT |
+| **Class** | 36 | 3.4% | ✓ PRESENT |
+| **Sexual Orientation** | 11 | 1.0% | ✓ MINIMAL |
+| **Disability Status** | 2 | 0.2% | ✓ MINIMAL |
+
+**Key Terms:**
+- Religion: islam (198), muslim (109), muslims (83), christian (34)
+- Race/Ethnicity: european (147), multiculturalism (23)
+- Gender: women (37), men (35), feminism (23)
+
+**Finding:** Document frames identity primarily through **religious and ethno-cultural lenses** (72.6% of identity terms) rather than gender/sexuality frameworks common in Western identity politics discourse.
+
+### Religion Discourse Analysis
+
+**Frequency Overview:**
+- Islam: 198 occurrences (71% of religious terms)
+- Muslim/Muslims: 192 occurrences
+- Christianity: 72 occurrences (Christian + Christianity + Christians)
+- **Islam mentioned 5.4x more than Christianity**
+
+**Framing Patterns:**
+- 56 Islam contexts contain conflict/negative framing (war, terror, threat)
+- 16 Islam contexts contain positive framing (peace)
+- Common collocations with Islam: war (17), against (14), terror (8), threat (4)
+- Key phrases: "islam war" (35 matches), "islam europe" (29 matches)
+
+**Islam Context Examples:**
+- "islam's war against the world"
+- "european negationism regarding the terrible record of islam"
+- "rewriting european history books to make them more islam friendly"
+
+**Christianity Context Examples:**
+- "fall of the christian state of lebanon" (historical)
+- "christian exodus from the arab world" (persecution narrative)
+- Christianity framed as **defensive/under threat** rather than aggressive
+
+**Distribution Between Halves:**
+- First half: 44 Islam mentions (11.3%)
+- Second half: 346 Islam mentions (88.7%)
+- **Finding:** Religious discourse MINIMAL in first half, DOMINANT in second half
+- This explains why first half (13.96%) more similar to YouTube than second half (11.45%)
+
+### Feminism Analysis (75 total occurrences)
+
+**Term Frequencies:**
+- feminism: 23
+- feminist: 13  
+- patriarchal: 13
+- feminists: 10
+- patriarchy: 6
+- matriarchy: 6
+
+**Key Chapter Titles:**
+- "Radical Feminism and Political Correctness"
+- "The Failure of Western Feminism"
+- "How the Feminists' 'War against Boys' Paved the Way for Islam"
+- "Feminism Leads to the Oppression of Women"
+
+**Core Framing:**
+- "radical feminism" - most common collocation (7 times)
+- Linked to "Political Correctness" (6 times)
+- Linked to "Cultural Marxism" (5 times)
+- Described as "cultural Marxism imported from Germany in the 1930s"
+
+**Key Assertions:**
+1. Feminism = Part of Cultural Marxist ideology
+2. "Feminism Leads to the Oppression of Women"
+3. "War against Boys paved the way for Islam"
+4. Feminist support for Muslim immigration described as "anti-colonial efforts"
+5. "Most destructive and fanatical" element of liberalism (Judge Bork quote)
+
+**Thematic Connections:**
+- Feminism ↔ Political Correctness (5 matches)
+- Feminism ↔ Cultural Marxism (5 matches)
+- Feminism ↔ Women's oppression (4 matches)
+- Feminist ↔ War (4 matches)
+
+**Finding:** Feminism NOT discussed as women's rights advocacy. Instead framed as component of "Cultural Marxism" designed to undermine Western civilization, portrayed as harmful to both women AND men.
+
 ### Exact Phrase Matches
 
 **5-word match:**
@@ -145,6 +244,11 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 - `shared_words_summary.txt` - Overview with statistics
 - `split_analysis_results.txt` - All 9 combinations of split document comparisons
 - `thematic_analysis_results.txt` - Thematic clustering of shared vocabulary
+- `identity_categories_results.txt` - All 7 identity categories with frequencies
+- `identity_categories_visualization.png` - 4-panel visualization of identity categories
+- `religion_discourse_analysis.txt` - All Islam and Christianity contexts
+- `religion_halves_comparison.txt` - Religion distribution between document halves
+- `feminism_analysis_report.txt` - All 23 feminism and 13 feminist contexts
 
 ## Usage
 
