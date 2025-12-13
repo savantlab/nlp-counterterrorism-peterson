@@ -95,7 +95,7 @@ for i, cat in enumerate(categories):
     ax4.text(0.08, y_offset, full_text, fontsize=9, verticalalignment='top',
              fontfamily='monospace', color=color, fontweight='bold')
     
-    y_offset -= 0.135
+    y_offset -= 0.15
 
 ax4.set_xlim(0, 1)
 ax4.set_ylim(0, 1)
