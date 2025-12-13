@@ -24,7 +24,7 @@ ax.text(5, 10.0, 'YouTube Video Avoids "Feminism" While Describing Radical Femin
 
 # LEFT SIDE: YouTube Video
 # Box for YouTube
-youtube_box = FancyBboxPatch((0.5, 7.0), 3.8, 2.3, 
+youtube_box = FancyBboxPatch((0.5, 6.4), 3.8, 2.9, 
                              boxstyle="round,pad=0.05", 
                              edgecolor='#FF0000', facecolor='#FFE6E6', 
                              linewidth=3)
@@ -40,7 +40,7 @@ ax.text(2.3, 7.4, 'Mentions "feminism": 0 times', ha='center', fontsize=9,
 
 # Characteristics of "postmodern neo-marxists" in YouTube
 # Add inner box for characteristics
-char_box_yt = FancyBboxPatch((0.5, 5.2), 3.6, 1.7,
+char_box_yt = FancyBboxPatch((0.5, 4.6), 3.6, 2.3,
                              boxstyle="round,pad=0.05",
                              edgecolor='#CC0000', facecolor='white',
                              linewidth=1.5, linestyle='--', alpha=0.8)
@@ -65,7 +65,7 @@ for char in characteristics_yt:
 
 # RIGHT SIDE: 2083 Document
 # Box for 2083
-doc_box = FancyBboxPatch((5.7, 7.0), 3.8, 2.3, 
+doc_box = FancyBboxPatch((5.7, 6.4), 3.8, 2.9, 
                          boxstyle="round,pad=0.05", 
                          edgecolor='#0066CC', facecolor='#E6F2FF', 
                          linewidth=3)
@@ -80,7 +80,7 @@ ax.text(7.7, 7.4, 'Mentions "feminism": 75 times', ha='center', fontsize=9,
         color='#0066CC', fontweight='bold')
 # Characteristics of "radical feminism" in 2083
 # Add inner box for characteristics
-char_box_doc = FancyBboxPatch((5.9, 5.2), 3.6, 1.7,
+char_box_doc = FancyBboxPatch((5.9, 4.6), 3.6, 2.3,
                               boxstyle="round,pad=0.05",
                               edgecolor='#0066CC', facecolor='white',
                               linewidth=1.5, linestyle='--', alpha=0.8)
