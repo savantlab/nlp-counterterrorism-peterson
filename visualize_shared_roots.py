@@ -11,18 +11,18 @@ import numpy as np
 def create_shared_roots_diagram():
     """Create a comprehensive visualization of shared intellectual roots."""
     
-    fig = plt.figure(figsize=(20, 14))
+    fig = plt.figure(figsize=(20, 16))
     
     # Create main axis
     ax = plt.subplot(111)
     ax.set_xlim(0, 20)
-    ax.set_ylim(0, 14)
+    ax.set_ylim(0, 16)
     ax.axis('off')
     
     # Title
-    ax.text(10, 13.5, 'Shared Intellectual Roots: YouTube vs 2083 Document', 
+    ax.text(10, 15.5, 'Shared Intellectual Roots: YouTube vs 2083 Document', 
             fontsize=20, fontweight='bold', ha='center')
-    ax.text(10, 13, 'How Two Texts Critique the Same Ideological Movement', 
+    ax.text(10, 15, 'How Two Texts Critique the Same Ideological Movement', 
             fontsize=14, ha='center', style='italic', color='gray')
     
     # ============================================================================
@@ -30,44 +30,44 @@ def create_shared_roots_diagram():
     # ============================================================================
     
     # Marxist root box
-    root_box = FancyBboxPatch((7, 11), 6, 1.8, boxstyle="round,pad=0.1", 
+    root_box = FancyBboxPatch((7, 13), 6, 1.8, boxstyle="round,pad=0.1", 
                               edgecolor='darkred', facecolor='#ffcccc', linewidth=3)
     ax.add_patch(root_box)
-    ax.text(10, 12.5, 'SHARED ROOT', fontsize=11, fontweight='bold', ha='center')
-    ax.text(10, 12.1, 'Marxist Theory → Cultural Analysis', fontsize=10, ha='center')
-    ax.text(10, 11.8, '(Germany)', fontsize=9, ha='center', style='italic')
-    ax.text(10, 11.5, 'Marx (1818-1883): Economic class struggle', fontsize=8, ha='center')
-    ax.text(10, 11.25, 'Frankfurt School (1930s): Cultural criticism', fontsize=8, ha='center')
+    ax.text(10, 14.5, 'SHARED ROOT', fontsize=11, fontweight='bold', ha='center')
+    ax.text(10, 14.1, 'Marxist Theory → Cultural Analysis', fontsize=10, ha='center')
+    ax.text(10, 13.8, '(Germany)', fontsize=9, ha='center', style='italic')
+    ax.text(10, 13.5, 'Marx (1818-1883): Economic class struggle', fontsize=8, ha='center')
+    ax.text(10, 13.25, 'Frankfurt School (1930s): Cultural criticism', fontsize=8, ha='center')
     
     # ============================================================================
     # SECTION 2: Divergent Terminology (middle branches)
     # ============================================================================
     
     # YouTube branch (left)
-    yt_box = FancyBboxPatch((1, 8.5), 7, 1.8, boxstyle="round,pad=0.1",
+    yt_box = FancyBboxPatch((1, 10.5), 7, 1.8, boxstyle="round,pad=0.1",
                             edgecolor='#e67e22', facecolor='#ffe6cc', linewidth=2)
     ax.add_patch(yt_box)
-    ax.text(4.5, 10, 'YOUTUBE TERMS', fontsize=11, fontweight='bold', ha='center', color='#d35400')
-    ax.text(4.5, 9.6, '• Post-modernism', fontsize=9, ha='center')
-    ax.text(4.5, 9.3, '• Neo-Marxism', fontsize=9, ha='center')
-    ax.text(4.5, 9, '• Identity politics', fontsize=9, ha='center')
-    ax.text(4.5, 8.7, 'GENERAL critique', fontsize=8, ha='center', style='italic')
+    ax.text(4.5, 12, 'YOUTUBE TERMS', fontsize=11, fontweight='bold', ha='center', color='#d35400')
+    ax.text(4.5, 11.6, '• Post-modernism', fontsize=9, ha='center')
+    ax.text(4.5, 11.3, '• Neo-Marxism', fontsize=9, ha='center')
+    ax.text(4.5, 11, '• Identity politics', fontsize=9, ha='center')
+    ax.text(4.5, 10.7, 'GENERAL critique', fontsize=8, ha='center', style='italic')
     
     # 2083 branch (right)
-    doc_box = FancyBboxPatch((12, 8.5), 7, 1.8, boxstyle="round,pad=0.1",
+    doc_box = FancyBboxPatch((12, 10.5), 7, 1.8, boxstyle="round,pad=0.1",
                              edgecolor='#3498db', facecolor='#cce5ff', linewidth=2)
     ax.add_patch(doc_box)
-    ax.text(15.5, 10, '2083 TERMS', fontsize=11, fontweight='bold', ha='center', color='#2874a6')
-    ax.text(15.5, 9.6, '• Political Correctness', fontsize=9, ha='center')
-    ax.text(15.5, 9.3, '• Cultural Marxism', fontsize=9, ha='center')
-    ax.text(15.5, 9, '• Identity politics + Feminism', fontsize=9, ha='center')
-    ax.text(15.5, 8.7, 'SPECIFIC manifestations', fontsize=8, ha='center', style='italic')
+    ax.text(15.5, 12, '2083 TERMS', fontsize=11, fontweight='bold', ha='center', color='#2874a6')
+    ax.text(15.5, 11.6, '• Political Correctness', fontsize=9, ha='center')
+    ax.text(15.5, 11.3, '• Cultural Marxism', fontsize=9, ha='center')
+    ax.text(15.5, 11, '• Identity politics + Feminism', fontsize=9, ha='center')
+    ax.text(15.5, 10.7, 'SPECIFIC manifestations', fontsize=8, ha='center', style='italic')
     
     # Arrows from root to branches
-    arrow1 = FancyArrowPatch((8.5, 11), (5, 10.3), arrowstyle='->', 
+    arrow1 = FancyArrowPatch((8.5, 13), (5, 12.3), arrowstyle='->', 
                             lw=2, color='darkred', mutation_scale=20)
     ax.add_patch(arrow1)
-    arrow2 = FancyArrowPatch((11.5, 11), (15, 10.3), arrowstyle='->', 
+    arrow2 = FancyArrowPatch((11.5, 13), (15, 12.3), arrowstyle='->', 
                             lw=2, color='darkred', mutation_scale=20)
     ax.add_patch(arrow2)
     
@@ -75,12 +75,12 @@ def create_shared_roots_diagram():
     # SECTION 3: Conceptual Mappings (middle)
     # ============================================================================
     
-    mappings_y = 7.5
+    mappings_y = 9.5
     ax.text(10, mappings_y, '3 KEY CONCEPTUAL MAPPINGS', fontsize=12, 
             fontweight='bold', ha='center', bbox=dict(boxstyle='round', facecolor='yellow', alpha=0.3))
     
     # Mapping 1
-    map1_y = 6.5
+    map1_y = 8.5
     ax.add_patch(mpatches.Rectangle((1, map1_y-0.3), 7, 0.8, 
                                     edgecolor='#e67e22', facecolor='#ffe6cc', linewidth=1.5))
     ax.text(4.5, map1_y+0.2, 'Post-modernism', fontsize=9, ha='center', fontweight='bold')
@@ -95,7 +95,7 @@ def create_shared_roots_diagram():
     ax.text(10, map1_y-0.6, 'Reject objective truth', fontsize=8, ha='center', style='italic')
     
     # Mapping 2
-    map2_y = 5.2
+    map2_y = 7.2
     ax.add_patch(mpatches.Rectangle((1, map2_y-0.3), 7, 0.8, 
                                     edgecolor='#e67e22', facecolor='#ffe6cc', linewidth=1.5))
     ax.text(4.5, map2_y+0.2, 'Neo-Marxism', fontsize=9, ha='center', fontweight='bold')
@@ -110,7 +110,7 @@ def create_shared_roots_diagram():
     ax.text(10, map2_y-0.6, 'Marxism applied to culture', fontsize=8, ha='center', style='italic')
     
     # Mapping 3
-    map3_y = 3.9
+    map3_y = 5.9
     ax.add_patch(mpatches.Rectangle((1, map3_y-0.3), 7, 0.8, 
                                     edgecolor='#e67e22', facecolor='#ffe6cc', linewidth=1.5))
     ax.text(4.5, map3_y+0.2, 'Identity politics', fontsize=9, ha='center', fontweight='bold')
@@ -129,7 +129,7 @@ def create_shared_roots_diagram():
     # SECTION 4: Overlap Statistics (bottom)
     # ============================================================================
     
-    stats_y = 2.5
+    stats_y = 4.5
     
     # Overlap circle (left)
     overlap_circle = plt.Circle((4, stats_y-0.5), 0.8, color='#2ecc71', alpha=0.3)
@@ -162,12 +162,12 @@ def create_shared_roots_diagram():
     # SECTION 5: Bottom summary
     # ============================================================================
     
-    summary_box = FancyBboxPatch((2, 0.2), 16, 0.8, boxstyle="round,pad=0.1",
+    summary_box = FancyBboxPatch((2, 0.5), 16, 1.2, boxstyle="round,pad=0.1",
                                  edgecolor='purple', facecolor='#f0e6ff', linewidth=2)
     ax.add_patch(summary_box)
-    ax.text(10, 0.75, 'CONCLUSION: Same ideological critique (75% overlap), but 2083 adds specific targets (feminism) and threats (Islam)', 
+    ax.text(10, 1.4, 'CONCLUSION: Same ideological critique (75% overlap), but 2083 adds specific targets (feminism) and threats (Islam)', 
             fontsize=10, ha='center', fontweight='bold')
-    ax.text(10, 0.4, 'This explains 16% TF-IDF similarity: shared concepts but different scope and specificity', 
+    ax.text(10, 0.9, 'This explains 16% TF-IDF similarity: shared concepts but different scope and specificity', 
             fontsize=9, ha='center', style='italic')
     
     plt.tight_layout()
