@@ -10,21 +10,21 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 import numpy as np
 
 # Create figure with white background
-fig, ax = plt.subplots(figsize=(18, 12))
+fig, ax = plt.subplots(figsize=(18, 14))
 fig.patch.set_facecolor('white')
 ax.set_xlim(0, 10)
-ax.set_ylim(0, 11)
+ax.set_ylim(0, 12)
 ax.axis('off')
 
 # Title
-ax.text(5, 10.5, 'Strategic Terminology: "Postmodern Neo-Marxists" as Implicit Reference', 
+ax.text(5, 11.5, 'Strategic Terminology: "Postmodern Neo-Marxists" as Implicit Reference', 
         ha='center', fontsize=18, fontweight='bold')
-ax.text(5, 10.0, 'YouTube Video Avoids "Feminism" While Describing Radical Feminist Ideology', 
+ax.text(5, 11.0, 'YouTube Video Avoids "Feminism" While Describing Radical Feminist Ideology', 
         ha='center', fontsize=12, style='italic', color='#555')
 
 # LEFT SIDE: YouTube Video
 # Box for YouTube
-youtube_box = FancyBboxPatch((0.5, 6.4), 3.8, 2.9, 
+youtube_box = FancyBboxPatch((0.5, 7.5), 3.8, 2.9, 
                              boxstyle="round,pad=0.05", 
                              edgecolor='#FF0000', facecolor='#FFE6E6', 
                              linewidth=3)
@@ -40,13 +40,13 @@ ax.text(2.3, 7.4, 'Mentions "feminism": 0 times', ha='center', fontsize=9,
 
 # Characteristics of "postmodern neo-marxists" in YouTube
 # Add inner box for characteristics
-char_box_yt = FancyBboxPatch((0.5, 4.6), 3.6, 2.3,
+char_box_yt = FancyBboxPatch((0.5, 5.7), 3.6, 2.3,
                              boxstyle="round,pad=0.05",
                              edgecolor='#CC0000', facecolor='white',
                              linewidth=1.5, linestyle='--', alpha=0.8)
 ax.add_patch(char_box_yt)
 
-char_y = 6.7
+char_y = 7.8
 ax.text(2.3, char_y, 'Characteristics Described:', ha='center', fontsize=10, 
         fontweight='bold', color='#333')
 characteristics_yt = [
@@ -65,7 +65,7 @@ for char in characteristics_yt:
 
 # RIGHT SIDE: 2083 Document
 # Box for 2083
-doc_box = FancyBboxPatch((5.7, 6.4), 3.8, 2.9, 
+doc_box = FancyBboxPatch((5.7, 7.5), 3.8, 2.9, 
                          boxstyle="round,pad=0.05", 
                          edgecolor='#0066CC', facecolor='#E6F2FF', 
                          linewidth=3)
@@ -80,13 +80,13 @@ ax.text(7.7, 7.4, 'Mentions "feminism": 75 times', ha='center', fontsize=9,
         color='#0066CC', fontweight='bold')
 # Characteristics of "radical feminism" in 2083
 # Add inner box for characteristics
-char_box_doc = FancyBboxPatch((5.9, 4.6), 3.6, 2.3,
+char_box_doc = FancyBboxPatch((5.9, 5.7), 3.6, 2.3,
                               boxstyle="round,pad=0.05",
                               edgecolor='#0066CC', facecolor='white',
                               linewidth=1.5, linestyle='--', alpha=0.8)
 ax.add_patch(char_box_doc)
 
-ax.text(7.7, 6.7, 'Characteristics Described:', ha='center', fontsize=10,
+ax.text(7.7, 7.8, 'Characteristics Described:', ha='center', fontsize=10,
         fontweight='bold', color='#333')
 characteristics_doc = [
     '✓ Part of "Cultural Marxism" ideology',
@@ -103,13 +103,13 @@ for char in characteristics_doc:
     y_pos -= 0.3
 
 # CENTER: Overlap analysis
-overlap_box = FancyBboxPatch((1.2, 2.7), 7.6, 1.7, 
+overlap_box = FancyBboxPatch((1.2, 3.5), 7.6, 1.7, 
                              boxstyle="round,pad=0.05", 
                              edgecolor='#00AA00', facecolor='#E6FFE6', 
                              linewidth=3)
 ax.add_patch(overlap_box)
 
-ax.text(5, 4.2, 'CONCEPTUAL OVERLAP: 6 Shared Characteristics', 
+ax.text(5, 5.0, 'CONCEPTUAL OVERLAP: 6 Shared Characteristics', 
         ha='center', fontsize=11, fontweight='bold', color='#00AA00')
 
 shared = [
@@ -124,7 +124,7 @@ shared = [
 # Display shared characteristics in 2 columns
 col1_x = 3.2
 col2_x = 6.8
-y_start = 3.7
+y_start = 4.5
 
 for i, item in enumerate(shared):
     if i < 3:
