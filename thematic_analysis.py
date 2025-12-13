@@ -60,15 +60,15 @@ def preprocess_text(text):
 def main():
     # Read documents
     print("Loading documents...\n")
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
-    with open('youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
         yt_text = f.read()
     
     # Read shared words
     shared_words = set()
-    with open('shared_words_alphabetical.txt', 'r') as f:
+    with open('txt/shared_words_alphabetical.txt', 'r') as f:
         for line in f:
             line = line.strip()
             if line and not line.startswith('SHARED') and not line.startswith('=') and not line.startswith('Total'):
@@ -148,7 +148,7 @@ def main():
         print(f"  {result['theme']:30} - {ratio:.4f}x")
     
     # Save results
-    with open('thematic_analysis_results.txt', 'w') as f:
+    with open('txt/thematic_analysis_results.txt', 'w') as f:
         f.write("THEMATIC ANALYSIS OF SHARED VOCABULARY\n")
         f.write("="*80 + "\n\n")
         

@@ -23,10 +23,10 @@ def main():
     print("="*80)
     
     # Read files
-    with open('youtube_transcript_clean.txt', 'r') as f:
+    with open('txt/youtube_transcript_clean.txt', 'r') as f:
         yt_text = f.read()
     
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
     print(f"\nYouTube transcript: {len(yt_text.split())} words")

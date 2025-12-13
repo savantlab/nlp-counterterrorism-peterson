@@ -17,13 +17,13 @@ def preprocess_text(text):
 def main():
     # Read documents
     print("Loading documents...")
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
-    with open('youtube_transcript_before_hobbes.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/youtube_transcript_before_hobbes.txt', 'r', encoding='utf-8', errors='ignore') as f:
         yt_truncated = f.read()
     
-    with open('youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
         yt_full = f.read()
     
     print("\n" + "="*70)

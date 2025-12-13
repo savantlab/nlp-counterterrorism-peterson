@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 word_freq = {}
 
 print("Reading shared words file...")
-with open('shared_words_by_yt_frequency.txt', 'r') as f:
+with open('txt/shared_words_by_yt_frequency.txt', 'r') as f:
     lines = f.readlines()
     
     # Skip header lines

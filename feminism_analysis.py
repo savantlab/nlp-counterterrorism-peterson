@@ -35,7 +35,7 @@ def get_surrounding_words(text, term, window=7):
 def main():
     print("Loading 2083 document...\n")
     
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
     print("="*80)
@@ -123,7 +123,7 @@ def main():
             print(f"  Sample: ...{sample}...")
     
     # Save comprehensive report
-    with open('feminism_analysis_report.txt', 'w') as f:
+    with open('txt/feminism_analysis_report.txt', 'w') as f:
         f.write("COMPREHENSIVE FEMINISM ANALYSIS - 2083 DOCUMENT\n")
         f.write("="*80 + "\n\n")
         

@@ -1,0 +1,59 @@
+UNIVERSITIES AND 'RADICAL' ANALYSIS
+================================================================================
+
+RESEARCH QUESTIONS:
+1. What claims do both documents make about universities and radicals?
+2. How do the claims compare?
+
+KEY FINDINGS:
+
+1. FREQUENCY ANALYSIS:
+   
+   YouTube (726 words):
+   - Universities/academic: 7 mentions
+   - Radical/radicals: 2 mentions
+   - Combined proximity: 2 instances
+   
+   2083 Document (41,548 words):
+   - Universities/academic: 146 mentions
+   - Radical/radicals: 36 mentions
+   - Combined proximity: 19 instances
+
+2. EMPHASIS (per 1000 words):
+   
+   Universities:
+   - YouTube: 9.64 per 1000 words
+   - 2083: 3.51 per 1000 words
+   - YouTube emphasizes universities 2.74x MORE than 2083
+   
+   Radical:
+   - YouTube: 2.75 per 1000 words
+   - 2083: 0.87 per 1000 words
+   - YouTube emphasizes 'radical' 3.18x MORE than 2083
+
+3. YOUTUBE VIDEO KEY CLAIMS:
+   - "the true believers of the radical left became the professors of today"
+   - Universities in "60s and 70s when radical left became professors"
+   - Universities as source of "postmodernist" ideology
+   - Campus radicals producing "mobs that violently shut down campus speakers"
+   - Focus: Universities as PRIMARY source of ideological threat
+
+4. 2083 DOCUMENT KEY CLAIMS:
+   - Universities mentioned in context of radical feminism, radical Islam
+   - Universities as one of many cultural institutions affected
+   - Less emphasis on universities as PRIMARY source
+   - More emphasis on historical/political movements
+
+CONCLUSION:
+The YouTube video places MUCH GREATER EMPHASIS on universities as the source
+of radical ideology compared to the 2083 document. YouTube presents universities
+as the primary incubator (60s/70s) where "radical left" became professors who
+now indoctrinate students. This is a central thesis of the video.
+
+The 2083 document mentions universities but focuses more broadly on political
+movements, historical forces, and Islam. Universities are one context among many,
+not the primary explanatory factor.
+
+This represents a significant difference in EMPHASIS and CAUSATION:
+- YouTube: Universities → Radical professors → Postmodernism/Neo-Marxism
+- 2083: Broader cultural Marxism + Multiple institutions + Islam

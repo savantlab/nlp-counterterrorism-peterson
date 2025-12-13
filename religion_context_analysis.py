@@ -60,7 +60,7 @@ def analyze_sentiment_patterns(contexts):
 def main():
     print("Loading 2083 document...\n")
     
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
     print("="*80)
@@ -165,7 +165,7 @@ def main():
                 print(f"  Sample: ...{sample}...")
     
     # Save detailed report
-    with open('religion_discourse_analysis.txt', 'w') as f:
+    with open('txt/religion_discourse_analysis.txt', 'w') as f:
         f.write("RELIGION DISCOURSE ANALYSIS - 2083 DOCUMENT\n")
         f.write("="*80 + "\n\n")
         

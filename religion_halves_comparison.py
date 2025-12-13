@@ -36,10 +36,10 @@ def main():
     print("Loading documents...\n")
     
     # Read the split documents
-    with open('2083_first_half.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083_first_half.txt', 'r', encoding='utf-8', errors='ignore') as f:
         first_half = f.read()
     
-    with open('2083_second_half.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083_second_half.txt', 'r', encoding='utf-8', errors='ignore') as f:
         second_half = f.read()
     
     print(f"First half size: {len(first_half):,} characters")
@@ -151,7 +151,7 @@ def main():
         print(f"\n✓ Second half is MORE focused on religion ({total_religious_second - total_religious_first} more mentions)")
     
     # Save results
-    with open('religion_halves_comparison.txt', 'w') as f:
+    with open('txt/religion_halves_comparison.txt', 'w') as f:
         f.write("RELIGION MENTIONS: FIRST HALF vs SECOND HALF OF 2083\n")
         f.write("="*80 + "\n\n")
         

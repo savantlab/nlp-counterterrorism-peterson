@@ -19,10 +19,10 @@ def preprocess_text(text):
 def main():
     # Read documents
     print("Loading documents...")
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
-    with open('youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
         yt_text = f.read()
     
     print("Splitting documents...")
@@ -46,16 +46,16 @@ def main():
     print(f"YouTube - Second half: {len(yt_second_half.split()):,} words")
     
     # Save split documents
-    with open('2083_first_half.txt', 'w', encoding='utf-8') as f:
+    with open('txt/2083_first_half.txt', 'w', encoding='utf-8') as f:
         f.write(doc_first_half)
     
-    with open('2083_second_half.txt', 'w', encoding='utf-8') as f:
+    with open('txt/2083_second_half.txt', 'w', encoding='utf-8') as f:
         f.write(doc_second_half)
     
-    with open('youtube_first_half.txt', 'w', encoding='utf-8') as f:
+    with open('txt/youtube_first_half.txt', 'w', encoding='utf-8') as f:
         f.write(yt_first_half)
     
-    with open('youtube_second_half.txt', 'w', encoding='utf-8') as f:
+    with open('txt/youtube_second_half.txt', 'w', encoding='utf-8') as f:
         f.write(yt_second_half)
     
     print("\n✓ Created split documents")
@@ -168,7 +168,7 @@ def main():
     print(f"\nBest cross-match: {results_sorted[0][0]} vs {results_sorted[0][1]} = {results_sorted[0][2]*100:.2f}%")
     
     # Save results
-    with open('split_analysis_results.txt', 'w') as f:
+    with open('txt/split_analysis_results.txt', 'w') as f:
         f.write("SPLIT DOCUMENT SIMILARITY ANALYSIS\\n")
         f.write("="*70 + "\\n\\n")
         f.write("All Combinations (sorted by similarity):\\n")

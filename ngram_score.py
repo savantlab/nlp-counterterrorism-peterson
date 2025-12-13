@@ -49,10 +49,10 @@ def compute_jaccard_similarity(set1, set2):
 
 def main():
     # Read documents
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc1_text = f.read()
     
-    with open('youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc2_text = f.read()
     
     print("Preprocessing documents...")

@@ -25,7 +25,7 @@ def find_contexts(text, pattern, context_words=30):
     return matches
 
 # Read YouTube transcript
-yt_text = read_file('youtube_transcript_clean.txt')
+yt_text = read_file('txt/youtube_transcript_clean.txt')
 
 # Key analysis: What does the video actually criticize?
 print("="*80)
@@ -111,7 +111,7 @@ for pattern, label in key_claims:
 print("\n\n5. COMPARISON: YT VIDEO vs 2083 DOCUMENT ON FEMINISM")
 print("-" * 80)
 
-doc_text = read_file('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt')
+doc_text = read_file('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt')
 
 # Find how 2083 describes radical feminism
 radical_fem_contexts = find_contexts(doc_text, r'radical feminism')
@@ -224,7 +224,7 @@ represents strategic framing: critique the ideology without naming feminist
 movement explicitly.
 """
 
-with open('feminism_implicit_reference_results.txt', 'w') as f:
+with open('txt/feminism_implicit_reference_results.txt', 'w') as f:
     f.write(output)
 
 print("\n" + "="*80)

@@ -80,10 +80,10 @@ def find_exact_phrases(doc_text, yt_text, min_words=4, max_words=10):
 def main():
     # Read documents
     print("Loading documents...")
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
-    with open('youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
         yt_text = f.read()
     
     print("\n" + "="*70)

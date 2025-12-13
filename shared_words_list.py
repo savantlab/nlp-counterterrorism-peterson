@@ -38,10 +38,10 @@ def preprocess_text(text):
 def main():
     # Read documents
     print("Loading documents...")
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
-    with open('youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
         yt_text = f.read()
     
     print("Preprocessing...")
@@ -83,7 +83,7 @@ def main():
     print("\nWriting results to files...")
     
     # 1. Sorted by YT frequency
-    with open('shared_words_by_yt_frequency.txt', 'w') as f:
+    with open('txt/shared_words_by_yt_frequency.txt', 'w') as f:
         f.write("SHARED WORDS SORTED BY YOUTUBE TRANSCRIPT FREQUENCY\n")
         f.write("="*70 + "\n\n")
         f.write(f"Total: {len(common_words)} words\n\n")
@@ -95,7 +95,7 @@ def main():
     print("✓ Created: shared_words_by_yt_frequency.txt")
     
     # 2. Sorted by document frequency
-    with open('shared_words_by_doc_frequency.txt', 'w') as f:
+    with open('txt/shared_words_by_doc_frequency.txt', 'w') as f:
         f.write("SHARED WORDS SORTED BY DOCUMENT FREQUENCY\n")
         f.write("="*70 + "\n\n")
         f.write(f"Total: {len(common_words)} words\n\n")
@@ -107,7 +107,7 @@ def main():
     print("✓ Created: shared_words_by_doc_frequency.txt")
     
     # 3. Alphabetical list
-    with open('shared_words_alphabetical.txt', 'w') as f:
+    with open('txt/shared_words_alphabetical.txt', 'w') as f:
         f.write("SHARED WORDS - ALPHABETICAL LIST\n")
         f.write("="*70 + "\n\n")
         f.write(f"Total: {len(common_words)} words\n\n")
@@ -117,7 +117,7 @@ def main():
     print("✓ Created: shared_words_alphabetical.txt")
     
     # 4. Summary with statistics
-    with open('shared_words_summary.txt', 'w') as f:
+    with open('txt/shared_words_summary.txt', 'w') as f:
         f.write("SHARED VOCABULARY ANALYSIS SUMMARY\n")
         f.write("="*70 + "\n\n")
         

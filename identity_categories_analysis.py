@@ -80,7 +80,7 @@ def get_context_samples(text, term, num_samples=3):
 def main():
     print("Loading 2083 document...\n")
     
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
     print(f"Document size: {len(doc_text):,} characters\n")
@@ -142,7 +142,7 @@ def main():
         print(f"{category:<25} {total:>10,}             {presence}")
     
     # Write detailed results to file
-    with open('identity_categories_results.txt', 'w') as f:
+    with open('txt/identity_categories_results.txt', 'w') as f:
         f.write("IDENTITY POLITICS CATEGORIES IN 2083 DOCUMENT\n")
         f.write("="*80 + "\n\n")
         

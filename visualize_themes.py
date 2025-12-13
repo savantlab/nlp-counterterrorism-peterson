@@ -62,15 +62,15 @@ def main():
     print("Loading documents...\n")
     
     # Read documents
-    with open('2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/2083. EUROPEAN DECLARATION OF INDEPENDENCE.txt', 'r', encoding='utf-8', errors='ignore') as f:
         doc_text = f.read()
     
-    with open('youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    with open('txt/youtube_transcript_clean.txt', 'r', encoding='utf-8', errors='ignore') as f:
         yt_text = f.read()
     
     # Read shared words
     shared_words = set()
-    with open('shared_words_alphabetical.txt', 'r') as f:
+    with open('txt/shared_words_alphabetical.txt', 'r') as f:
         for line in f:
             line = line.strip()
             if line and not line.startswith('SHARED') and not line.startswith('=') and not line.startswith('Total'):
