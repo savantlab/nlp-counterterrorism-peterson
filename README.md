@@ -43,6 +43,9 @@ Comprehensive NLP analysis comparing a YouTube video transcript (Jordan Peterson
 - `feminism_implicit_reference_analysis.py` - Analyze if YT refers to feminists as postmodern neo-marxists
 - `visualize_implicit_feminism.py` - Visualize strategic terminology and implicit reference
 
+### Network Analysis
+- `network_cooccurrence_analysis.py` - Network co-occurrence analysis revealing conceptual architecture
+
 ### Presentation
 - `analysis_presentation.ipynb` - Jupyter notebook with visualizations
 - `visualize_themes.py` - Generate 4-panel thematic analysis visualization
@@ -264,6 +267,182 @@ Both texts trace their critiques to the same intellectual root:
 
 **Finding:** The 16% TF-IDF similarity reflects shared vocabulary and concepts, but 2083 extends the critique to specific implementations (Cultural Marxism → feminism) and additional threats (Islam) not present in the YouTube video. Both texts fundamentally oppose the same ideological movement rooted in Marxist theory applied to culture.
 
+## Network Co-occurrence Analysis
+
+### Conceptual Architecture Comparison
+
+Network analysis reveals how concepts cluster differently in Peterson's video vs. Breivik's manifesto by tracking which terms appear together within a 10-word window. This analysis builds a conceptual map showing not just WHICH concepts appear, but HOW they connect to form different ideological structures.
+
+#### Peterson's Network: Sparse & Abstract
+
+![Peterson Network](network_peterson.png)
+
+*Peterson's concept network: Sparse structure (35 edges, 0.07 density) with loosely connected abstract concepts. Central hubs are "identity" (0.226), "equity" (0.194), and "race" (0.161). No specific demographic or religious targets.*
+
+**Visual Characteristics:**
+- Relatively few connecting lines between concepts
+- Nodes spread out with loose clustering
+- Abstract, evenly distributed structure
+- Key pairs: identity ↔ politics (17), race ↔ sexual (14), universities ↔ western (10)
+
+**What This Shows:** Peterson presents a broad, intellectual critique of identity politics and postmodern ideology in academia. Concepts float in abstract ideological space without tight clustering around concrete threats or movements.
+
+#### Breivik's Network: Dense & Operationalized
+
+![Breivik Network](network_breivik.png)
+
+*Breivik's concept network: Dense structure (165 edges, 0.21 density - **3x denser**) with tightly interconnected specific framework. Central hubs are "political" (0.564), "western" (0.487), "correctness" (0.436), and **"islam" (0.436)** - equally central as "correctness".*
+
+**Visual Characteristics:**
+- Many connecting lines forming web-like structure
+- Tight clustering around central hubs
+- Some nodes dramatically larger (political, correctness, islam)
+- Key pairs: correctness ↔ political (**793**!), islam ↔ war (106), feminism ↔ radical (63)
+
+**What This Shows:** Breivik presents a highly coordinated, specific ideological system. "Political correctness" is THE central organizing concept (793 co-occurrences), tightly connected to specific movements (feminism, marxism) and specific threats (islam connected to war, terror).
+
+**Critical Finding:** **"Islam"** has the highest betweenness centrality (0.114) - it's the primary bridge concept connecting abstract ideological critique (Cultural Marxism, Political Correctness) to concrete threat identification (war, muslim, terror). This is the transformation point from abstract to concrete.
+
+#### Side-by-Side Comparison
+
+![Network Comparison](network_comparison_sidebyside.png)
+
+*Direct visual comparison: Peterson's sparse web (left) vs. Breivik's dense web (right). Same vocabulary, dramatically different conceptual architecture.*
+
+### Network Metrics
+
+| Metric | Peterson Video | Breivik Manifesto | Ratio |
+|--------|---------------|-------------------|-------|
+| **Nodes (concepts)** | 32 | 40 | 1.25x |
+| **Edges (co-occurrences)** | 35 | 165 | 4.7x |
+| **Network Density** | 0.0706 | 0.2115 | **3x denser** |
+| **Avg Clustering** | 0.3147 | 0.4434 | 1.4x |
+
+**Key Finding**: Breivik's network is **3x denser** than Peterson's—concepts are tightly interconnected in a specific, operationalized framework vs. loosely connected abstract critique.
+
+### Most Connected Concepts (Degree Centrality)
+
+**Peterson's Network Hubs:**
+1. **identity** (0.226) - Most central
+2. **equity** (0.194)
+3. **race** (0.161)
+4. **western** (0.129)
+5. **sex** (0.129)
+
+**Pattern**: Abstract identity politics framework, no specific targets
+
+**Breivik's Network Hubs:**
+1. **political** (0.564) - **2.5x more central** than Peterson's top concept
+2. **western** (0.487)
+3. **correctness** (0.436)
+4. **islam** (0.436) - **Equally central as "correctness"**
+5. **culture** (0.410)
+
+**Pattern**: "Political correctness" as organizing concept, with **islam** integrated as specific threat
+
+### Bridge Concepts (Betweenness Centrality)
+
+These terms connect different conceptual clusters—they're the "gateway" concepts:
+
+**Peterson's Bridges:**
+1. **identity** (0.341)
+2. **sex** (0.290)
+3. **western** (0.249)
+4. **power** (0.204)
+5. **conflict** (0.172)
+
+**Breivik's Bridges:**
+1. **islam** (0.114) - **#1 bridge concept** - connects ideology to threat
+2. **political** (0.102)
+3. **western** (0.094)
+4. **culture** (0.079)
+5. **sexual** (0.067)
+
+**Critical Finding**: In Breivik's network, **"islam"** is the primary bridge concept—it connects the abstract ideological critique to concrete threat identification. This is the transformation point from abstract to concrete.
+
+### Strongest Concept Associations
+
+**Peterson's Top Pairs:**
+1. **identity ↔ politics**: 17 co-occurrences
+2. **race ↔ sexual**: 14
+3. **universities ↔ western**: 10
+4. **diversity ↔ equity**: 10
+5. **equity ↔ identity**: 10
+6. **civilization ↔ western**: 9
+7. **class ↔ struggle**: 9
+8. **marxist ↔ postmodern**: 8
+9. **freedom ↔ speech**: 8
+
+**Breivik's Top Pairs:**
+1. **correctness ↔ political**: **793 co-occurrences** (!!)
+2. **islam ↔ war**: 106
+3. **political ↔ western**: 100
+4. **marxism ↔ political**: 90
+5. **correctness ↔ marxism**: 90
+6. **correctness ↔ western**: 82
+7. **culture ↔ western**: 73
+8. **universities ↔ western**: 69
+9. **feminism ↔ radical**: 63
+10. **islam ↔ muslim**: 61
+
+**Pattern Difference**: Peterson's associations are abstract and evenly distributed (10-17 co-occurrences). Breivik's show massive concentration—"political correctness" with **793 co-occurrences** dominates, followed by **islam + war** (106) and **feminism + radical** (63).
+
+### Shared vs. Unique Associations
+
+**Only 6 Shared Concept Pairs** (despite 72% vocabulary overlap):
+1. **freedom ↔ speech**
+2. **professor ↔ university**
+3. **race ↔ sex**
+4. **race ↔ sexual**
+5. **sex ↔ sexual**
+6. **universities ↔ western**
+
+**Unique to Peterson**: 29 pairs (e.g., identity ↔ politics, diversity ↔ equity)
+**Unique to Breivik**: 159 pairs (e.g., islam ↔ war, feminism ↔ radical, correctness ↔ political)
+
+**Critical Insight**: Same vocabulary, **dramatically different conceptual architecture**. The HOW concepts connect matters more than WHICH concepts appear.
+
+### Key Implications
+
+1. **Network Density Reveals Operationalization**
+   - Peterson: Sparse (0.07) = Abstract, broad-stroke critique
+   - Breivik: Dense (0.21) = Specific, coordinated, operationalized framework
+   - **The 3x density difference is not just quantitative - it's qualitative**
+   - Breivik's ideology is not "Peterson + extremism"—it's a fundamentally more interconnected conceptual system
+   - Sparse networks suggest exploratory thinking; dense networks suggest ideology ready for action
+
+2. **"Political Correctness" vs "Postmodern Neo-Marxism"**
+   - Peterson: Never explicitly says "political correctness"
+   - Breivik: "Political correctness" has **793 co-occurrences**—THE central organizing concept
+   - Same critique, completely different primary terminology and network structure
+   - Peterson's most common pair: identity ↔ politics (17)
+   - Breivik's most common pair: correctness ↔ political (793) - **46x more intense**
+
+3. **Islam as Transformation Point**
+   - **"Islam"** is Breivik's #1 bridge concept (betweenness centrality: 0.114)
+   - It connects the abstract ideological critique (Cultural Marxism) to concrete threat (Islam + war)
+   - Peterson's network has no equivalent bridge to specific demographic threats
+   - This bridge concept shows where theory transforms into action-oriented threat narrative
+
+4. **Feminism Integration**
+   - In Breivik's network: **feminism ↔ radical** (63), **feminism ↔ marxism** (33), **correctness ↔ feminism** (28)
+   - Feminism forms a tight triangle, embedded in "Cultural Marxism/Political Correctness" cluster
+   - Peterson discusses these ideas without naming feminism (strategic terminology)
+   - Keeps critique abstract while Breivik makes it concrete and specific
+
+5. **Minimal Architectural Overlap Despite Vocabulary Overlap**
+   - 72% vocabulary overlap + 75% conceptual overlap (thematic clustering)
+   - But only **6 shared concept associations** in network analysis
+   - Same words, connected in fundamentally different ways
+   - **Conclusion:** The HOW concepts connect matters more than WHICH concepts appear
+   - They pull from the same discourse community but build fundamentally different conceptual structures
+
+6. **Universities as Battleground**
+   - Both networks show **universities ↔ western** connection
+   - Peterson: 10 co-occurrences (philosophical observation)
+   - Breivik: 69 co-occurrences (**7x more** - massively emphasized battlefield)
+   - Same concept, vastly different intensity and operational focus
+
 ### Strategic Terminology: Implicit Feminism Reference
 
 ![Implicit Feminism Reference](implicit_feminism_reference_visualization.png)
@@ -340,6 +519,12 @@ The video deliberately avoids the word 'feminism' while describing an ideology t
 - `overlap_venn_diagram.png` - Venn diagram showing 75% conceptual overlap
 - `feminism_implicit_reference_results.txt` - Analysis of implicit feminism reference through umbrella terminology
 - `implicit_feminism_reference_visualization.png` - Strategic framing visualization showing 6 shared characteristics
+- `network_analysis_results.txt` - Complete network metrics and co-occurrence data
+- `network_analysis_summary.md` - Detailed summary of network findings with implications
+- `network_graphs_analysis.md` - Comprehensive explanation of what the network visualizations show
+- `network_peterson.png` - Peterson's sparse concept network visualization (35 edges, 0.07 density)
+- `network_breivik.png` - Breivik's dense concept network visualization (165 edges, 0.21 density)
+- `network_comparison_sidebyside.png` - Side-by-side network comparison showing dramatic structural differences
 
 ## Usage
 

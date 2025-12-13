@@ -1,0 +1,44 @@
+[
+  {
+    "text": "🧵 Identity Politics in the 2083 Manifesto: A Data-Driven Analysis\n\nI analyzed all 1,068 identity-related terms in the 2083 European Declaration. The distribution reveals a dramatically different framing than typical Western identity politics discourse.\n\n**The Breakdown:**\n• Religion: 549 mentions (51.4%) - DOMINANT\n• Race/Ethnicity: 226 (21.2%)\n• Gender: 176 (16.5%)\n• Nationality: 68 (6.4%)\n• Class: 36 (3.4%)\n• Sexual Orientation: 11 (1.0%) - MINIMAL\n• Disability: 2 (0.2%) - MINIMAL\n\n**Key Finding:**\nThe document frames identity primarily through RELIGIOUS and ETHNO-CULTURAL lenses (72.6% combined), not the gender/sexuality frameworks dominant in Western progressive discourse.\n\n**Top Terms:**\n• islam: 198 mentions\n• muslim/muslims: 192\n• european: 147\n• women: 37\n• feminism: 23\n\nThis is identity politics, but organized around CIVILIZATIONAL conflict rather than social justice frameworks.\n\nAll 7 categories present, but vastly different emphasis.\n\n#DataAnalysis #IdentityPolitics #ComparativeRhetoric",
+    "time": "10:00",
+    "posted": false,
+    "created_at": "2025-12-16T10:00:00",
+    "image": "twitter_posts/identity_categories_visualization.png"
+  },
+  {
+    "text": "🧵 242 Shared Words: Visualizing Lexical Overlap Between YouTube & 2083\n\nCreated a word cloud of the 242 terms that appear in BOTH a Jordan Peterson video and the 2083 extremist manifesto. Word size = frequency in YouTube transcript.\n\n**Most Prominent Shared Terms:**\n• ideas\n• identity\n• western\n• world\n• post (postmodernism)\n• campus\n• universities\n• power\n• marx\n• sexual\n\n**What This Reveals:**\n72% of the YouTube video's vocabulary (242 of 336 words) appears somewhere in the 1,000+ page manifesto.\n\nBut here's the key: these aren't random overlaps. They cluster around specific themes:\n→ Academic institutions as ideology source\n→ Identity-based frameworks\n→ Marxist theoretical roots\n→ Western civilization under critique\n→ Power dynamics\n\n**The Technical Detail:**\nStop words removed. Word size based on YouTube frequency, not document frequency. This shows what the VIDEO emphasizes, filtered through what appears in BOTH texts.\n\nHigh vocabulary overlap ≠ high similarity\n(TF-IDF: 16%, because of different frequency distributions)\n\nShared vocabulary can serve radically different rhetorical purposes.\n\n#DataVisualization #Linguistics #TextAnalysis",
+    "time": "14:00",
+    "posted": false,
+    "created_at": "2025-12-16T14:00:00",
+    "image": "twitter_posts/wordcloud_shared_vocabulary.png"
+  },
+  {
+    "text": "🧵 Thematic Overlap Analysis: 242 Shared Words Across 10 Conceptual Clusters\n\nUsed NLP to analyze shared vocabulary between a YouTube video (726 words) and the 2083 manifesto (41,548 words). Found 242 common terms organized into thematic clusters.\n\n**Top 3 Themes:**\n\n1. IDENTITY & SOCIAL (24 occurrences)\n   → identity, race, sex, gender, diversity, oppression\n   → Highest YT/Doc ratio (0.20×) - most over-represented in YouTube\n\n2. IDEAS & THOUGHT (17 occurrences)\n   → ideas, think, philosophy, truth, concepts\n   → Core epistemological concerns\n\n3. POLITICAL & IDEOLOGICAL (15 occurrences)\n   → marx, capitalism, radical, progressive, post, postmodernism\n   → Direct political framing\n\n**All 10 Thematic Clusters:**\n• Identity & Social\n• Ideas & Thought\n• Political & Ideological\n• Education & Academia\n• Power & Control\n• Western & Cultural\n• Time & Change\n• Conflict & Opposition\n• Society & Structure\n• Knowledge & Understanding\n\n**Key Finding:**\n72% of YouTube vocabulary appears in the manifesto, but with different frequency distributions. The video emphasizes academic/identity themes while the manifesto spreads these concepts across historical, political, and religious contexts.\n\nSame conceptual toolkit, different applications.\n\n#ComputationalLinguistics #ThematicAnalysis #TextMining",
+    "time": "18:00",
+    "posted": false,
+    "created_at": "2025-12-16T18:00:00",
+    "image": "twitter_posts/thematic_analysis_visualization.png"
+  },
+  {
+    "text": "🧵 75% Conceptual Overlap: What YouTube Doesn't Say (But the 2083 Manifesto Does)\n\nCompared a 726-word YouTube video with a 41,548-word extremist manifesto. Found massive conceptual overlap despite minimal direct quotation.\n\n**The Shared 75%:**\n✓ Same ideology critique\n✓ Different terminology\n• Marxist roots → Frankfurt School → 1960s universities\n• Identity politics framework\n• Western civilization under attack\n• Academic institutions as primary source\n\n**YouTube Focus (GENERAL):**\n• Post-modernism\n• Neo-Marxism\n• Identity politics\n• NO mention: Feminism (0×)\n• NO mention: Islam (0×)\n\n**2083 Focus (SPECIFIC):**\n• Political Correctness\n• Cultural Marxism\n• Feminism: 75 mentions\n• Islam: 390 mentions (DOMINANT second-half theme)\n\n**The 16% TF-IDF Similarity:**\nThis seemingly low number actually reveals something important:\n→ Shared conceptual framework\n→ But vastly different scope and emphasis\n\nYouTube: Academic ideology critique\n2083: Same critique + explicit targets (feminism, Islam)\n\nOne text implies. The other names explicitly.\n\n#TextAnalysis #NLP #RadicalizationResearch",
+    "time": "10:00",
+    "posted": false,
+    "created_at": "2025-12-17T10:00:00",
+    "image": "twitter_posts/overlap_venn_diagram.png"
+  },
+  {
+    "text": "🧵 Same Critique, Different Labels: Mapping YouTube vs 2083 Terminology\n\nAnalyzed how a Jordan Peterson video and the 2083 manifesto critique the SAME ideological movement using completely different terminology.\n\n**Shared Root:**\nBoth trace their critiques to:\n• Marx (1818-1883): Economic class struggle\n• Frankfurt School (1930s): Critical theory applied to culture\n\n**3 Key Conceptual Mappings:**\n\n1. Post-modernism (YouTube) = Political Correctness (2083)\n   → Both describe rejection of objective truth, speech suppression\n\n2. Neo-Marxism (YouTube) = Cultural Marxism (2083)\n   → Both describe Marxist conflict theory applied from economics to culture\n\n3. Identity Politics (YouTube) ≈ Identity Politics + Feminism (2083)\n   → Both describe division along demographic lines\n\n**The Overlap:**\n• 75% shared ideological framework\n• 25% unique to 2083 (Islam, explicit feminism focus)\n\n**Why This Matters:**\nYouTube presents a GENERAL critique of academic ideology.\n2083 presents the SAME critique + SPECIFIC manifestations (radical feminism, Islam as existential threats).\n\n16% TF-IDF similarity reflects shared vocabulary, but different scope and specificity.\n\nSame intellectual roots, same targets, different frames.\n\n#ComparativeAnalysis #PoliticalTheory #CriticalThinking",
+    "time": "14:00",
+    "posted": false,
+    "created_at": "2025-12-17T14:00:00",
+    "image": "twitter_posts/shared_roots_visualization.png"
+  },
+  {
+    "text": "🧵 Strategic Terminology: How \"Postmodern Neo-Marxists\" Functions as an Implicit Reference\n\nI analyzed a Jordan Peterson video (726 words) and compared it to the 2083 manifesto (41,000 words). Found something revealing about rhetorical strategy.\n\n**The Pattern:**\n• YouTube video mentions \"feminism\": 0 times\n• But describes \"postmodern neo-marxists\" with 6 characteristics\n• 2083 document explicitly calls this \"radical feminism\" (75 mentions)\n\n**6 Shared Characteristics:**\n1. Patriarchal critique of Western civilization\n2. Social construction of sex/gender differences  \n3. Identity politics framework\n4. Marxist ideological roots\n5. Campus/academic activism\n6. Political correctness enforcement\n\n**The Strategic Move:**\nThe video uses \"postmodern neo-marxists\" as an UMBRELLA TERM that encompasses what 2083 explicitly identifies as radical feminist ideology—without ever saying the word \"feminism.\"\n\nThis is strategic framing: critique the ideology while avoiding direct naming of the feminist movement.\n\nBoth texts describe the SAME movement. Different terminology, same target.\n\n16% TF-IDF similarity, 75% conceptual overlap.\n\n#NLP #DiscourseAnalysis #RhetoricalStrategy",
+    "time": "18:00",
+    "posted": false,
+    "created_at": "2025-12-17T18:00:00"
+    "image": "twitter_posts/implicit_feminism_reference_visualization.png"
+  }
+]
