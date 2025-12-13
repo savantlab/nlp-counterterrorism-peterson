@@ -201,20 +201,20 @@ def create_venn_style_overlap():
                             edgecolor='#2874a6')
     ax.add_patch(doc_circle)
     
-    # YouTube label
-    ax.text(2.3, 8, 'YOUTUBE', fontsize=12, fontweight='bold', color='#d35400')
-    ax.text(2.3, 7.5, 'Post-modernism', fontsize=9)
-    ax.text(2.3, 7.2, 'Neo-Marxism', fontsize=9)
-    ax.text(2.3, 6.9, 'Identity politics', fontsize=9)
-    ax.text(2.3, 6.5, '(726 words)', fontsize=8, style='italic')
+    # YouTube label (left disjoint section)
+    ax.text(2.2, 7.8, 'YOUTUBE', fontsize=12, fontweight='bold', color='#d35400', ha='center')
+    ax.text(2.2, 7.4, 'Post-modernism', fontsize=9, ha='center')
+    ax.text(2.2, 7.1, 'Neo-Marxism', fontsize=9, ha='center')
+    ax.text(2.2, 6.8, 'Identity politics', fontsize=9, ha='center')
+    ax.text(2.2, 6.4, '(726 words)', fontsize=8, style='italic', ha='center')
     
-    # 2083 label  
-    ax.text(7.5, 8, '2083 DOC', fontsize=12, fontweight='bold', color='#2874a6')
-    ax.text(7.5, 7.5, 'Political Correctness', fontsize=9)
-    ax.text(7.5, 7.2, 'Cultural Marxism', fontsize=9)
-    ax.text(7.5, 6.9, 'Feminism', fontsize=9)
-    ax.text(7.5, 6.6, 'Islam (dominant)', fontsize=9)
-    ax.text(7.5, 6.2, '(41,548 words)', fontsize=8, style='italic')
+    # 2083 label (right disjoint section)
+    ax.text(7.8, 7.8, '2083 DOC', fontsize=12, fontweight='bold', color='#2874a6', ha='center')
+    ax.text(7.8, 7.4, 'Political Correctness', fontsize=9, ha='center')
+    ax.text(7.8, 7.1, 'Cultural Marxism', fontsize=9, ha='center')
+    ax.text(7.8, 6.8, 'Feminism', fontsize=9, ha='center')
+    ax.text(7.8, 6.5, 'Islam (dominant)', fontsize=9, ha='center')
+    ax.text(7.8, 6.1, '(41,548 words)', fontsize=8, style='italic', ha='center')
     
     # Overlap section (center)
     ax.text(5, 6.5, 'SHARED', fontsize=11, fontweight='bold', ha='center', color='#27ae60')
