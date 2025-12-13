@@ -103,13 +103,13 @@ for char in characteristics_doc:
     y_pos -= 0.3
 
 # CENTER: Overlap analysis
-overlap_box = FancyBboxPatch((1.2, 2.8), 7.6, 1.9, 
+overlap_box = FancyBboxPatch((1.2, 2.7), 7.6, 1.7, 
                              boxstyle="round,pad=0.05", 
                              edgecolor='#00AA00', facecolor='#E6FFE6', 
                              linewidth=3)
 ax.add_patch(overlap_box)
 
-ax.text(5, 4.5, 'CONCEPTUAL OVERLAP: 6 Shared Characteristics', 
+ax.text(5, 4.2, 'CONCEPTUAL OVERLAP: 6 Shared Characteristics', 
         ha='center', fontsize=11, fontweight='bold', color='#00AA00')
 
 shared = [
@@ -124,7 +124,7 @@ shared = [
 # Display shared characteristics in 2 columns
 col1_x = 3.2
 col2_x = 6.8
-y_start = 4.0
+y_start = 3.7
 
 for i, item in enumerate(shared):
     if i < 3:
