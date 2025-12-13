@@ -1,4 +1,5 @@
-# Parallel Critiques: Chapter Outline
+# Parallel Critiques: Analyzing Rhetorical Extremism
+## Chapter Outline
 
 ## Front Matter
 

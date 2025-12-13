@@ -1,4 +1,4 @@
-# Parallel Critiques: Tracing Shared Ideological Roots from Academia to Extremism
+# Parallel Critiques: Analyzing Rhetorical Extremism
 
 ## Overview
 
