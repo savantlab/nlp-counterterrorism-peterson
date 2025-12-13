@@ -40,13 +40,13 @@ ax.text(2.3, 7.4, 'Mentions "feminism": 0 times', ha='center', fontsize=9,
 
 # Characteristics of "postmodern neo-marxists" in YouTube
 # Add inner box for characteristics
-char_box_yt = FancyBboxPatch((0.5, 5.3), 3.6, 1.5,
+char_box_yt = FancyBboxPatch((0.5, 5.2), 3.6, 1.7,
                              boxstyle="round,pad=0.05",
                              edgecolor='#CC0000', facecolor='white',
                              linewidth=1.5, linestyle='--', alpha=0.8)
 ax.add_patch(char_box_yt)
 
-char_y = 6.3
+char_y = 6.7
 ax.text(2.3, char_y, 'Characteristics Described:', ha='center', fontsize=10, 
         fontweight='bold', color='#333')
 characteristics_yt = [
@@ -80,13 +80,13 @@ ax.text(7.7, 7.4, 'Mentions "feminism": 75 times', ha='center', fontsize=9,
         color='#0066CC', fontweight='bold')
 # Characteristics of "radical feminism" in 2083
 # Add inner box for characteristics
-char_box_doc = FancyBboxPatch((5.9, 5.3), 3.6, 1.5,
+char_box_doc = FancyBboxPatch((5.9, 5.2), 3.6, 1.7,
                               boxstyle="round,pad=0.05",
                               edgecolor='#0066CC', facecolor='white',
                               linewidth=1.5, linestyle='--', alpha=0.8)
 ax.add_patch(char_box_doc)
 
-ax.text(7.7, 6.3, 'Characteristics Described:', ha='center', fontsize=10,
+ax.text(7.7, 6.7, 'Characteristics Described:', ha='center', fontsize=10,
         fontweight='bold', color='#333')
 characteristics_doc = [
     '✓ Part of "Cultural Marxism" ideology',
