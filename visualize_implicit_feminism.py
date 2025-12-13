@@ -132,16 +132,7 @@ for i, item in enumerate(shared):
     else:
         ax.text(col2_x, y_start - ((i-3) * 0.32), item, ha='center', fontsize=8.5, color='#000')
 
-# Arrows showing connection
-arrow1 = FancyArrowPatch((2.3, 6.4), (5, 4.7),
-                        arrowstyle='->', mutation_scale=20, 
-                        color='#FF6B6B', linewidth=2)
-ax.add_patch(arrow1)
-
-arrow2 = FancyArrowPatch((7.7, 6.4), (5, 4.7),
-                        arrowstyle='->', mutation_scale=20, 
-                        color='#4DA6FF', linewidth=2)
-ax.add_patch(arrow2)
+# Arrows removed for cleaner visual
 
 # BOTTOM: Conclusion box
 conclusion_box = FancyBboxPatch((0.5, 0.3), 9, 2.0, 
