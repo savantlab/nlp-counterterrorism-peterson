@@ -24,23 +24,30 @@ ax.text(5, 10.0, 'YouTube Video Avoids "Feminism" While Describing Radical Femin
 
 # LEFT SIDE: YouTube Video
 # Box for YouTube
-youtube_box = FancyBboxPatch((0.3, 7.2), 4, 2.2, 
-                             boxstyle="round,pad=0.1", 
+youtube_box = FancyBboxPatch((0.5, 6.5), 3.8, 2.8, 
+                             boxstyle="round,pad=0.05", 
                              edgecolor='#FF0000', facecolor='#FFE6E6', 
                              linewidth=3)
 ax.add_patch(youtube_box)
 
-ax.text(2.3, 9.1, 'YOUTUBE VIDEO', ha='center', fontsize=14, fontweight='bold', color='#CC0000')
-ax.text(2.3, 8.75, 'Jordan Peterson - Postmodernism', ha='center', fontsize=10, style='italic')
-ax.text(2.3, 8.35, 'Uses term:', ha='center', fontsize=11, fontweight='bold')
-ax.text(2.3, 7.95, '"Postmodern Neo-Marxists"', ha='center', fontsize=12, 
+ax.text(2.3, 9.0, 'YOUTUBE VIDEO', ha='center', fontsize=14, fontweight='bold', color='#CC0000')
+ax.text(2.3, 8.65, 'Jordan Peterson - Postmodernism', ha='center', fontsize=10, style='italic')
+ax.text(2.3, 8.25, 'Uses term:', ha='center', fontsize=11, fontweight='bold')
+ax.text(2.3, 7.85, '"Postmodern Neo-Marxists"', ha='center', fontsize=12, 
         bbox=dict(boxstyle='round', facecolor='yellow', alpha=0.3))
-ax.text(2.3, 7.5, 'Mentions "feminism": 0 times', ha='center', fontsize=9, 
+ax.text(2.3, 7.4, 'Mentions "feminism": 0 times', ha='center', fontsize=9, 
         color='#CC0000', fontweight='bold')
 
 # Characteristics of "postmodern neo-marxists" in YouTube
-char_y = 6.6
-ax.text(2.3, char_y, 'Characteristics Described:', ha='center', fontsize=11, 
+# Add inner box for characteristics
+char_box_yt = FancyBboxPatch((0.5, 5.0), 3.6, 1.6,
+                             boxstyle="round,pad=0.05",
+                             edgecolor='#CC0000', facecolor='white',
+                             linewidth=1.5, linestyle='--', alpha=0.8)
+ax.add_patch(char_box_yt)
+
+char_y = 6.5
+ax.text(2.3, char_y, 'Characteristics Described:', ha='center', fontsize=10, 
         fontweight='bold', color='#333')
 characteristics_yt = [
     '✓ Western civilization is "patriarchal"',
@@ -51,29 +58,35 @@ characteristics_yt = [
     '✓ Root out discrimination'
 ]
 
-y_pos = char_y - 0.5
+y_pos = char_y - 0.35
 for char in characteristics_yt:
-    ax.text(2.3, y_pos, char, ha='center', fontsize=8.5, color='#000')
-    y_pos -= 0.4
+    ax.text(2.3, y_pos, char, ha='center', fontsize=8, color='#000')
+    y_pos -= 0.3
 
 # RIGHT SIDE: 2083 Document
 # Box for 2083
-doc_box = FancyBboxPatch((5.7, 7.2), 4, 2.2, 
-                         boxstyle="round,pad=0.1", 
+doc_box = FancyBboxPatch((5.7, 6.5), 3.8, 2.8, 
+                         boxstyle="round,pad=0.05", 
                          edgecolor='#0066CC', facecolor='#E6F2FF', 
                          linewidth=3)
 ax.add_patch(doc_box)
 
-ax.text(7.7, 9.1, '2083 DOCUMENT', ha='center', fontsize=14, fontweight='bold', color='#0066CC')
-ax.text(7.7, 8.75, 'European Declaration', ha='center', fontsize=10, style='italic')
-ax.text(7.7, 8.35, 'Uses term:', ha='center', fontsize=11, fontweight='bold')
-ax.text(7.7, 7.95, '"Radical Feminism"', ha='center', fontsize=12, 
+ax.text(7.7, 9.0, '2083 DOCUMENT', ha='center', fontsize=14, fontweight='bold', color='#0066CC')
+ax.text(7.7, 8.65, 'European Declaration', ha='center', fontsize=10, style='italic')
+ax.text(7.7, 8.25, 'Uses term:', ha='center', fontsize=11, fontweight='bold')
+ax.text(7.7, 7.85, '"Radical Feminism"', ha='center', fontsize=12, 
         bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.3))
-ax.text(7.7, 7.5, 'Mentions "feminism": 75 times', ha='center', fontsize=9, 
+ax.text(7.7, 7.4, 'Mentions "feminism": 75 times', ha='center', fontsize=9, 
         color='#0066CC', fontweight='bold')
-
 # Characteristics of "radical feminism" in 2083
-ax.text(7.7, 6.6, 'Characteristics Described:', ha='center', fontsize=11, 
+# Add inner box for characteristics
+char_box_doc = FancyBboxPatch((5.9, 5.0), 3.6, 1.6,
+                              boxstyle="round,pad=0.05",
+                              edgecolor='#0066CC', facecolor='white',
+                              linewidth=1.5, linestyle='--', alpha=0.8)
+ax.add_patch(char_box_doc)
+
+ax.text(7.7, 6.5, 'Characteristics Described:', ha='center', fontsize=10, 
         fontweight='bold', color='#333')
 characteristics_doc = [
     '✓ Part of "Cultural Marxism" ideology',
@@ -86,17 +99,17 @@ characteristics_doc = [
 
 y_pos = 6.1
 for char in characteristics_doc:
-    ax.text(7.7, y_pos, char, ha='center', fontsize=8.5, color='#000')
-    y_pos -= 0.4
+    ax.text(7.7, y_pos, char, ha='center', fontsize=8, color='#000')
+    y_pos -= 0.3
 
 # CENTER: Overlap analysis
-overlap_box = FancyBboxPatch((2, 2.8), 6, 1.8, 
-                             boxstyle="round,pad=0.1", 
+overlap_box = FancyBboxPatch((1.2, 3.1), 7.6, 2.3, 
+                             boxstyle="round,pad=0.05", 
                              edgecolor='#00AA00', facecolor='#E6FFE6', 
                              linewidth=3)
 ax.add_patch(overlap_box)
 
-ax.text(5, 4.3, 'CONCEPTUAL OVERLAP: 6 Shared Characteristics', 
+ax.text(5, 5.1, 'CONCEPTUAL OVERLAP: 6 Shared Characteristics', 
         ha='center', fontsize=12, fontweight='bold', color='#00AA00')
 
 shared = [
@@ -109,9 +122,9 @@ shared = [
 ]
 
 # Display shared characteristics in 2 columns
-col1_x = 3.5
-col2_x = 6.5
-y_start = 3.8
+col1_x = 3.2
+col2_x = 6.8
+y_start = 4.6
 
 for i, item in enumerate(shared):
     if i < 3:
@@ -120,19 +133,19 @@ for i, item in enumerate(shared):
         ax.text(col2_x, y_start - ((i-3) * 0.35), item, ha='center', fontsize=9, color='#000')
 
 # Arrows showing connection
-arrow1 = FancyArrowPatch((2.3, 4.6), (5, 4.6),
+arrow1 = FancyArrowPatch((2.3, 6.4), (5, 5.4),
                         arrowstyle='->', mutation_scale=20, 
                         color='#FF6B6B', linewidth=2)
 ax.add_patch(arrow1)
 
-arrow2 = FancyArrowPatch((7.7, 4.6), (5, 4.6),
+arrow2 = FancyArrowPatch((7.7, 6.4), (5, 5.4),
                         arrowstyle='->', mutation_scale=20, 
                         color='#4DA6FF', linewidth=2)
 ax.add_patch(arrow2)
 
 # BOTTOM: Conclusion box
-conclusion_box = FancyBboxPatch((0.8, 0.4), 8.4, 1.9, 
-                                boxstyle="round,pad=0.1", 
+conclusion_box = FancyBboxPatch((0.5, 0.3), 9, 2.0, 
+                                boxstyle="round,pad=0.05", 
                                 edgecolor='#FF6600', facecolor='#FFF4E6', 
                                 linewidth=3)
 ax.add_patch(conclusion_box)
