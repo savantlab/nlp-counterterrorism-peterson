@@ -103,14 +103,14 @@ for char in characteristics_doc:
     y_pos -= 0.3
 
 # CENTER: Overlap analysis
-overlap_box = FancyBboxPatch((1.2, 3.1), 7.6, 2.3, 
+overlap_box = FancyBboxPatch((1.2, 2.8), 7.6, 1.9, 
                              boxstyle="round,pad=0.05", 
                              edgecolor='#00AA00', facecolor='#E6FFE6', 
                              linewidth=3)
 ax.add_patch(overlap_box)
 
-ax.text(5, 5.1, 'CONCEPTUAL OVERLAP: 6 Shared Characteristics', 
-        ha='center', fontsize=12, fontweight='bold', color='#00AA00')
+ax.text(5, 4.5, 'CONCEPTUAL OVERLAP: 6 Shared Characteristics', 
+        ha='center', fontsize=11, fontweight='bold', color='#00AA00')
 
 shared = [
     '1. Patriarchal critique',
@@ -124,21 +124,21 @@ shared = [
 # Display shared characteristics in 2 columns
 col1_x = 3.2
 col2_x = 6.8
-y_start = 4.6
+y_start = 4.0
 
 for i, item in enumerate(shared):
     if i < 3:
-        ax.text(col1_x, y_start - (i * 0.35), item, ha='center', fontsize=9, color='#000')
+        ax.text(col1_x, y_start - (i * 0.32), item, ha='center', fontsize=8.5, color='#000')
     else:
-        ax.text(col2_x, y_start - ((i-3) * 0.35), item, ha='center', fontsize=9, color='#000')
+        ax.text(col2_x, y_start - ((i-3) * 0.32), item, ha='center', fontsize=8.5, color='#000')
 
 # Arrows showing connection
-arrow1 = FancyArrowPatch((2.3, 6.4), (5, 5.4),
+arrow1 = FancyArrowPatch((2.3, 6.4), (5, 4.7),
                         arrowstyle='->', mutation_scale=20, 
                         color='#FF6B6B', linewidth=2)
 ax.add_patch(arrow1)
 
-arrow2 = FancyArrowPatch((7.7, 6.4), (5, 5.4),
+arrow2 = FancyArrowPatch((7.7, 6.4), (5, 4.7),
                         arrowstyle='->', mutation_scale=20, 
                         color='#4DA6FF', linewidth=2)
 ax.add_patch(arrow2)
