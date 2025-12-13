@@ -1,0 +1,55 @@
+CULTURAL MARXISM vs POLITICAL CORRECTNESS SYNONYMY ANALYSIS
+================================================================================
+
+RESEARCH QUESTION:
+Are "Cultural Marxism" and "Political Correctness" used synonymously in 2083?
+
+KEY FINDINGS:
+
+1. FREQUENCY:
+   - Cultural Marxism: 32 occurrences
+   - Political Correctness: 92 occurrences
+   - PC appears 2.88x more frequently
+
+2. CO-OCCURRENCE:
+   - Found 34 instances where both terms appear within 300 chars
+   - This represents 106.2% of Cultural Marxism mentions
+   - Suggests strong conceptual relationship
+
+3. SHARED CONTEXT (Top 10):
+    1. marxism              (CM:  17, PC:  46)
+    2. cultural             (CM:  11, PC:  44)
+    3. western              (CM:  13, PC:  42)
+    4. political            (CM:  26, PC:   4)
+    5. most                 (CM:   4, PC:  24)
+    6. european             (CM:   4, PC:  23)
+    7. europe               (CM:  12, PC:  12)
+    8. frankfurt            (CM:   5, PC:  19)
+    9. feminism             (CM:   7, PC:  17)
+   10. more                 (CM:   7, PC:  16)
+
+
+4. INTERPRETATION:
+
+EVIDENCE FOR SYNONYMY:
+- Both terms appear in 34 shared contexts
+- Strong overlap in nearby terminology (feminism, multiculturalism, Frankfurt, etc.)
+- Both associated with same ideological framework
+- Both traced to same intellectual tradition
+
+EVIDENCE FOR DISTINCTION:
+- PC mentioned 2.88x more often (suggests different usage levels)
+- May represent GENERAL (PC) vs TECHNICAL (Cultural Marxism) terminology
+- PC = surface manifestation, Cultural Marxism = underlying ideology
+
+CONCLUSION:
+The terms appear to be FUNCTIONALLY SYNONYMOUS but at different levels:
+- Political Correctness = OBSERVABLE PHENOMENON (speech codes, taboos, enforcement)
+- Cultural Marxism = IDEOLOGICAL EXPLANATION (theoretical framework, origins)
+
+They refer to the SAME THING from different perspectives:
+- PC answers: "What is it?" (descriptive)
+- Cultural Marxism answers: "Where did it come from?" (genealogical)
+
+This is similar to saying "gravity" (phenomenon) and "general relativity" (theory).
+Different terms for different purposes, but referring to the same reality.
