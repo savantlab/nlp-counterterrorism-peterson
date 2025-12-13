@@ -1,0 +1,94 @@
+NETWORK ANALYSIS: CO-OCCURRENCE OF KEY TERMS
+======================================================================
+
+PETERSON VIDEO NETWORK
+----------------------------------------------------------------------
+Nodes: 32
+Edges: 35
+Density: 0.0706
+
+Top Connections:
+  identity ↔ politics: 17
+  race ↔ sexual: 14
+  universities ↔ western: 10
+  diversity ↔ equity: 10
+  equity ↔ identity: 10
+  civilization ↔ western: 9
+  identity ↔ sexual: 9
+  race ↔ sex: 9
+  class ↔ struggle: 9
+  equity ↔ sexual: 8
+  freedom ↔ speech: 8
+  sex ↔ sexual: 8
+  marxist ↔ postmodern: 8
+  professor ↔ radical: 6
+  identity ↔ race: 6
+  equity ↔ rights: 6
+  identity ↔ power: 6
+  campus ↔ class: 6
+  conflict ↔ power: 6
+  sex ↔ truth: 5
+  equity ↔ race: 5
+  professor ↔ universities: 5
+  professor ↔ university: 5
+  politics ↔ postmodern: 4
+  civilization ↔ oppressive: 3
+  sex ↔ western: 3
+  conflict ↔ marx: 3
+  class ↔ marx: 3
+  identity ↔ postmodern: 3
+  oppressive ↔ western: 2
+
+
+2083 MANIFESTO NETWORK
+----------------------------------------------------------------------
+Nodes: 40
+Edges: 165
+Density: 0.2115
+
+Top Connections:
+  correctness ↔ political: 793
+  islam ↔ war: 106
+  political ↔ western: 100
+  marxism ↔ political: 90
+  correctness ↔ marxism: 90
+  correctness ↔ western: 82
+  culture ↔ western: 73
+  universities ↔ western: 69
+  feminism ↔ radical: 63
+  islam ↔ muslim: 61
+  islam ↔ political: 57
+  education ↔ sex: 37
+  education ↔ political: 35
+  islam ↔ western: 33
+  war ↔ western: 33
+  feminism ↔ marxism: 33
+  muslim ↔ war: 33
+  marxist ↔ western: 31
+  marxist ↔ political: 29
+  feminism ↔ political: 29
+  correctness ↔ feminism: 28
+  students ↔ university: 27
+  education ↔ western: 27
+  feminist ↔ radical: 27
+  muslim ↔ western: 26
+  marxism ↔ western: 25
+  race ↔ sex: 25
+  correctness ↔ education: 24
+  political ↔ radical: 23
+  correctness ↔ radical: 21
+
+
+COMPARATIVE ANALYSIS
+----------------------------------------------------------------------
+Shared associations: 6
+Unique to Peterson: 29
+Unique to Breivik: 159
+
+Shared concept associations:
+  freedom ↔ speech
+  professor ↔ university
+  race ↔ sex
+  race ↔ sexual
+  sex ↔ sexual
+  universities ↔ western
