@@ -79,7 +79,7 @@ top_terms = {
 }
 
 title_text = "Top Terms per Category\n" + "="*50 + "\n\n"
-y_offset = 0.95
+y_offset = 0.92
 
 for i, cat in enumerate(categories):
     color = colors[i]
@@ -92,14 +92,14 @@ for i, cat in enumerate(categories):
     terms_text = "\n".join(terms_list)
     full_text = cat_text + terms_text
     
-    ax4.text(0.05, y_offset, full_text, fontsize=9, verticalalignment='top',
+    ax4.text(0.08, y_offset, full_text, fontsize=9, verticalalignment='top',
              fontfamily='monospace', color=color, fontweight='bold')
     
-    y_offset -= 0.14
+    y_offset -= 0.135
 
 ax4.set_xlim(0, 1)
 ax4.set_ylim(0, 1)
-ax4.text(0.5, 0.98, 'Top Terms per Category', fontsize=13, fontweight='bold',
+ax4.text(0.5, 0.97, 'Top Terms per Category', fontsize=13, fontweight='bold',
          ha='center', va='top')
 
 plt.suptitle('Identity Politics Categories in 2083 Document (1,068 total occurrences)', 
