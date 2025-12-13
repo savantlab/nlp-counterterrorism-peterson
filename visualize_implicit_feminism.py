@@ -24,7 +24,7 @@ ax.text(5, 10.0, 'YouTube Video Avoids "Feminism" While Describing Radical Femin
 
 # LEFT SIDE: YouTube Video
 # Box for YouTube
-youtube_box = FancyBboxPatch((0.5, 6.5), 3.8, 2.8, 
+youtube_box = FancyBboxPatch((0.5, 6.8), 3.8, 2.5, 
                              boxstyle="round,pad=0.05", 
                              edgecolor='#FF0000', facecolor='#FFE6E6', 
                              linewidth=3)
@@ -40,13 +40,13 @@ ax.text(2.3, 7.4, 'Mentions "feminism": 0 times', ha='center', fontsize=9,
 
 # Characteristics of "postmodern neo-marxists" in YouTube
 # Add inner box for characteristics
-char_box_yt = FancyBboxPatch((0.5, 5.0), 3.6, 1.6,
+char_box_yt = FancyBboxPatch((0.5, 5.1), 3.6, 1.5,
                              boxstyle="round,pad=0.05",
                              edgecolor='#CC0000', facecolor='white',
                              linewidth=1.5, linestyle='--', alpha=0.8)
 ax.add_patch(char_box_yt)
 
-char_y = 6.5
+char_y = 6.3
 ax.text(2.3, char_y, 'Characteristics Described:', ha='center', fontsize=10, 
         fontweight='bold', color='#333')
 characteristics_yt = [
@@ -65,7 +65,7 @@ for char in characteristics_yt:
 
 # RIGHT SIDE: 2083 Document
 # Box for 2083
-doc_box = FancyBboxPatch((5.7, 6.5), 3.8, 2.8, 
+doc_box = FancyBboxPatch((5.7, 6.8), 3.8, 2.5, 
                          boxstyle="round,pad=0.05", 
                          edgecolor='#0066CC', facecolor='#E6F2FF', 
                          linewidth=3)
@@ -80,13 +80,13 @@ ax.text(7.7, 7.4, 'Mentions "feminism": 75 times', ha='center', fontsize=9,
         color='#0066CC', fontweight='bold')
 # Characteristics of "radical feminism" in 2083
 # Add inner box for characteristics
-char_box_doc = FancyBboxPatch((5.9, 5.0), 3.6, 1.6,
+char_box_doc = FancyBboxPatch((5.9, 5.1), 3.6, 1.5,
                               boxstyle="round,pad=0.05",
                               edgecolor='#0066CC', facecolor='white',
                               linewidth=1.5, linestyle='--', alpha=0.8)
 ax.add_patch(char_box_doc)
 
-ax.text(7.7, 6.5, 'Characteristics Described:', ha='center', fontsize=10, 
+ax.text(7.7, 6.3, 'Characteristics Described:', ha='center', fontsize=10,
         fontweight='bold', color='#333')
 characteristics_doc = [
     '✓ Part of "Cultural Marxism" ideology',
