@@ -166,6 +166,8 @@ Definitions of key concepts: TF-IDF, Cultural Marxism, Frankfurt School, Identit
 ### Appendix F: Further Reading
 Academic literature on radicalization, discourse analysis, the Frankfurt School debate, and computational social science.
 
+- Cichocka, A., Marchlewska, M., & Biddlestone, M. (2022). Why do narcissists find conspiracy theories so appealing? Current Opinion in Psychology, 47, 101386. https://doi.org/10.1016/j.copsyc.2022.101386
+
 ---
 
 ## Estimated Chapter Lengths
